@@ -1,5 +1,5 @@
 /********** Template CSS --secondary: #FF6922;  **********/
-@font-face {font-family: 'TESLA';src: url('TESLA.TTF') format('truetype');}
+@font-face {font-family: 'TESLA';src: url('TESLA.ttf') format('truetype');}
 :root {
     --primary: #00B98E;
     --secondary: #FFFFFF;

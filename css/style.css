@@ -1,5 +1,5 @@
 /********** Template CSS --secondary: #FF6922;  **********/
-@font-face {font-family: 'TESLA';src: url('TESLA.ttf') format('truetype');}
+@font-face {font-family: 'TESLA';src: url('TESLA.TTF') format('truetype');}
 :root {
     --primary: #00B98E;
     --secondary: #FFFFFF;
@@ -7,6 +7,15 @@
     --dark: #0E2E50;
 	--white: #FFFFF;
 }
+
+img.opacityy3{transition:all .7s ease;-moz-transition:all .7s ease;-webkit-transition:all .7s ease;-ms-transition:all .7s ease;-o-transition:all .7s ease;}
+img.opacityy3:hover{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;box-shadow:0 0 35px rgba(255,255,255,1);}
+img.opacityy4{position: relative;-webkit-animation: SHADOW2 2s infinite;-moz-animation: SHADOW2 2s infinite;-ms-animation: SHADOW2 2s infinite;-o-animation: SHADOW2 2s infinite;animation: SHADOW2 2s infinite;}
+img.opacityy4:hover{border-radius:90px;-moz-transform:rotate(-720deg) scale(1.5);-webkit-transform:rotate(-720deg) scale(1.5);-o-transform:rotate(-720deg) scale(1.5);-ms-transform:rotate(720deg) scale(1.5);transform:rotate(-720deg) scale(1.5);}
+
+img.opacityy4,img.opacityy4:hover{transition:all .7s ease;-moz-transition:all .7s ease;-webkit-transition:all .7s ease;-ms-transition:all .7s ease;-o-transition:all .7s ease;}
+
+@-webkit-keyframes SHADOW2 {0%,100%{opacity:0.3;}50%{opacity:1;}} @-moz-keyframes SHADOW2 {0%,100%{opacity:0.3;}50%{opacity:1;}} @-ms-keyframes SHADOW2 {0%,100%{opacity:0;}50%{opacity:1;}} @-o-keyframes SHADOW2 {0%,100%{opacity:0;}50%{opacity:1;}} @-webkit-keyframes SHADOW2 {0%,100%{opacity:0.3;}50%{opacity:1;}}
 
 .back-to-top {
     position: fixed;

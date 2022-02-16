@@ -8,6 +8,11 @@
 	--white: #FFFFF;
 }
 
+.IMGbottom {position:absolute;width:935px; height:30px;padding: 12px 10px;margin:0 auto;text-align:center;color: #777;font-family: Tahoma, Geneva, sans-serif;font-size: 26px;background: rgba(0,0,0,0.7);border-top: 1px solid rgb(66,66,66);margin-left:5px;}
+
+.txt_carousel{position:absolute;margin-top:175px;text-align: center;color: #777;font-family:TESLA;font-size: 16px;background: black;opacity:0.9;
+padding: 2px 22px 2px 22px;border-radius:25px;-moz-border-radius:25px;-webkit-border-radius:25px;-ms-border-radius:5px;-o-border-radius:5px;}
+
 img.opacityy3{transition:all .7s ease;-moz-transition:all .7s ease;-webkit-transition:all .7s ease;-ms-transition:all .7s ease;-o-transition:all .7s ease;}
 img.opacityy3:hover{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;box-shadow:0 0 35px rgba(255,255,255,1);}
 img.opacityy4{position: relative;-webkit-animation: SHADOW2 2s infinite;-moz-animation: SHADOW2 2s infinite;-ms-animation: SHADOW2 2s infinite;-o-animation: SHADOW2 2s infinite;animation: SHADOW2 2s infinite;}

@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<style type="text/css">body {cursor: url('M2.png'), auto;}</style> 
+
+<head>
+<title>MAKLOUF EL BOMBARDI PLANE GAME </title>
+<meta charset="utf-8">
+
+<meta name="description" content="play Maklouf el bombardi plane game">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="Maklouf el bombardi plane game" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="GAME_PLANE.js"></script>
+
+ <style>
+div#load_screen2{
+	background: #000;
+	opacity: 1;
+	position: fixed;
+    z-index:10;
+	top: 0px;
+	width: 960px;
+	height: 470px;
+}
+div#load_screen2 > div#loading2{
+	color:#FFF;
+	width:120px;
+	height:24px;
+	margin: 200px auto;
+}
+</style>
+<script>
+window.addEventListener("load", function(){
+	var load_screen2 = document.getElementById("load_screen2");
+	document.body.removeChild(load_screen2);
+});
+</script>
+
+</head>
+
+<body> 
+
+<div id="load_screen2" style="position:absolute;top:155px;left:50%;margin-left:-475px;"><div id="loading2">انتظر التحميل
+Waite loading
+<IMG SRC="img/preloader1.gif" alt="abdelghani gheddab"style="margin-left:20px;"> 
+</div></div>
+
+
+
+
+<div class="MAIN"> 
+
+<div class="centerBGIMG"> 
+
+
+
+ <style> 
+.FFF{position:absolute;}
+.BOMBANM1{position:absolute;}
+</style>
+
+
+
+<div id="boxgame" style="position:absolute;top:0px;border: 8px solid #00B98E;border-radius:8px;">
+
+<img src="img/game/BACKT1.jpg"  alt="maklouf" id="SLIDERBACK1" class="FFF" />
+<img src="img/game/BACKT2.jpg"  alt="maklouf" id="SLIDERBACK2" class="FFF" />
+<img src="img/game/BACKTT3.jpg"  alt="maklouf" id="SLIDERBACK3" class="FFF" />
+<img src="img/game/BACKB.jpg"  alt="maklouf" id="SLIDERBACKB" class="FFF" />
+
+
+
+<img src="img/game/FFF.jpg" alt="maklouf" id="bomb" class="FFF"/>
+<img src="img/game/F1.png" alt="maklouf" id="FR1" class="FFF" />
+<img src="img/game/F2.png" alt="maklouf" id="FR2" class="BOMBANM1" />
+<img src="img/game/F3.png" alt="maklouf" id="FR3" class="BOMBANM1" />
+<img src="img/game/F4.png" alt="maklouf" id="FR4" class="BOMBANM1" />
+<img src="img/game/F5.png" alt="maklouf" id="FR5" class="BOMBANM1" />
+<img src="img/game/F6.png" alt="maklouf" id="FR6" class="BOMBANM1" />
+<img src="img/game/F7.png" alt="maklouf" id="FR7" class="BOMBANM1" />
+<img src="img/game/F8.png" alt="maklouf" id="FR8" class="BOMBANM1" />
+
+<img src="img/game/F1.png" alt="maklouf" id="FR01" class="FFF" />
+<img src="img/game/F2.png" alt="maklouf" id="FR02" class="BOMBANM1" />
+<img src="img/game/F3.png" alt="maklouf" id="FR03" class="BOMBANM1" />
+<img src="img/game/F4.png" alt="maklouf" id="FR04" class="BOMBANM1" />
+<img src="img/game/F5.png" alt="maklouf" id="FR05" class="BOMBANM1" />
+<img src="img/game/F6.png" alt="maklouf" id="FR06" class="BOMBANM1" />
+<img src="img/game/F7.png" alt="maklouf" id="FR07" class="BOMBANM1" />
+<img src="img/game/F8.png" alt="maklouf" id="FR08" class="BOMBANM1" />
+
+
+<img src="img/game/W1.gif"  alt="maklouf" id="S1" class="FFF" />
+<img src="img/game/W1.png"  alt="maklouf" id="S2" class="FFF" />
+<img src="img/game/W2.png"  alt="maklouf" id="S3" class="FFF" />
+<img src="img/game/W3.png"  alt="maklouf" id="S4" class="FFF" />
+<img src="img/game/W4.png"  alt="maklouf" id="S5" class="FFF" /> 
+
+<IMG SRC="img/game/smoke2.gif" alt="maklouf" id="EXPLOSwind" class="gam"/>
+
+
+<img src="img/game/TR1.png"  alt="maklouf" id="STR1" class="FFF" />
+<img src="img/game/TR1.png"  alt="maklouf" id="STR1a" class="FFF" />
+<img src="img/game/TR1.png"  alt="maklouf" id="STR1b" class="FFF" />
+<img src="img/game/TR1.png"  alt="maklouf" id="STR1c" class="FFF" />
+
+<img src="img/game/TR2.png"  alt="maklouf" id="STR2" class="FFF" />
+<img src="img/game/TR2.png"  alt="maklouf" id="STR2a" class="FFF" />
+<img src="img/game/TR2.png"  alt="maklouf" id="STR2b" class="FFF" />
+<img src="img/game/TR2.png"  alt="maklouf" id="STR2c" class="FFF" />
+
+<img src="img/game/TR3.png"  alt="maklouf" id="STR3" class="FFF" /> 
+
+
+<img src="img/game/P01.gif" alt="maklouf" id="PLANE" class="gam"/>
+<img src="img/game/P02.gif" alt="maklouf" id="PLANEa" class="gam"/>
+<img src="img/game/P03.gif" alt="maklouf" id="PLANEb" class="gam"/>
+
+
+<img src="img/game/P2M.gif" alt="maklouf" id="PLANE2" class="gam"/>
+<img src="img/game/P3.png" alt="maklouf" id="PLANE3" class="gam"/>
+<img src="img/game/P4.png" alt="maklouf" id="PLANE4" class="gam"/>
+<img src="img/game/P5.png" alt="maklouf" id="PLANE5" class="gam"/>
+<img src="img/game/P6.gif" alt="maklouf" id="PLANE6" class="gam"/>
+<img src="img/game/P7.png" alt="maklouf" id="PLANE7" class="gam"/>
+<img src="img/game/P8.gif" alt="maklouf" id="PLANE8" class="gam"/>
+<IMG SRC="img/game/smoke2.gif" alt="maklouf" id="EXPLOS" class="gam"/>
+
+<IMG SRC="img/game/B1.png" alt="maklouf" id="BOMBPLANE" style="width:70px;height:70px;"class="BOMBANM1"/>
+<IMG SRC="img/game/B1.png" alt="maklouf" id="BOMBPLANE2" style="width:70px;height:70px;"class="BOMBANM1"/>
+<IMG SRC="img/game/B1.png" alt="maklouf" id="BOMBPLANE3" style="width:70px;height:70px;"class="BOMBANM1"/> 
+
+ 
+
+<IMG SRC="img/game/LOGO.jpg" alt="maklouf"style="position:absolute;top:3px;right:3px;opacity:0.8;border-radius:10px;" class="opacityy3" onclick="javascript: Startt()"/>
+<div class='CLOCROTSML' style="position:absolute;top:36px;right:85px;"></div>
+<IMG SRC="img/STT1.png" alt="maklouf" id="STARTicon" style="position:absolute;top:46px;right:94px;" class="opacityy4" onclick="javascript: Startt()"/>
+<IMG SRC="img/STT2.png" alt="maklouf" id="STOPicon"  style="position:absolute;top:46px;right:94px;"  class="opacityy4"  onclick="javascript: Startt()"/>
+
+
+
+
+
+<IMG SRC="img/game/F2.png" style="position:absolute;top:100px;right:210px;width:40px;height:40px" class="BOMBANM1"/>
+<pre class="txtGREENS" style="position:absolute;top:65px;right:180px;" id="score"/></pre>
+<pre class="txtGREENS" style="position:absolute;top:25px;right:30px;" id="HAUT"/></pre>
+<pre class="txtGREENS" style="position:absolute;top:25px;right:30px;" id="SX1"/></pre>
+
+
+<IMG SRC="img/M2.png" style="position:absolute;top:20px;;right:210px;" class="opacityy2"/>
+<pre class="txtGREENS" style="position:absolute;top:-10px;right:180px;" id="scorelose"/></pre>
+
+<IMG SRC="img/game/LOGO.png" alt="maklouf"style="position:absolute;top:5px;left:20px;opacity:0.7;border-radius:5px;">
+<IMG SRC="img/game/P3.png" alt="maklouf"style="position:absolute;top:15px;left:50px;width:80px;height:40px" class="BOMBANM"/>
+<pre class="txtGREENS" style="position:absolute;top:-10px;left:170px;" id="PLANESCORE"/></pre>
+
+
+
+
+	<div id="MENU-IMG" style="position:absolute;top:-40px;left:400px;">
+	    	<a href="#" tabindex="0" title="STAGE 1"><img src="img/game/STAGE1.jpg"alt="maklouf"  onclick="javascript: STAGE1()"/>
+			</a><a href="#" tabindex="0" title="STAGE 2"><img src="img/game/STAGE2.jpg"alt="maklouf" onclick="javascript: STAGE2()"/>
+			</a><a href="#" tabindex="0" title="STAGE 3"><img src="img/game/STAGET3.jpg"alt="maklouf" onclick="javascript: STAGE3()"/>
+			</a>	
+	</div>
+<!--   -->	
+	<div id="MENU-IMG" style="position:absolute;top:-40px;left:280px;">
+	    	<a href="#" tabindex="0" title="Plane 1"><img src="img/game/P01.gif"alt="maklouf" style="width:150px;height:100px;" onclick="javascript: PLANNE1()"/>
+			</a><a href="#" tabindex="0" title="Plane 2"><img src="img/game/P02.gif"alt="maklouf" style="width:150px;height:100px;" onclick="javascript: PLANNE2()"/>
+			</a><a href="#" tabindex="0" title="Plane 3"><img src="img/game/P03.gif"alt="maklouf" style="width:150px;height:100px;" onclick="javascript: PLANNE3()"/>
+			</a>	
+	</div>
+	
+	
+	<div id="MENU-IMG" style="position:absolute;top:-40px;left:150px;">
+	    	<a href="#" tabindex="0" title="AUT fire"><img src="img/game/CANN1.gif" alt="maklouf" onclick="javascript: AUTO()"/>
+			</a><a href="#" tabindex="0" title="MAN fire"><img src="img/game/CANN2.png"alt="maklouf" onclick="javascript: NAUTO()"/>
+			</a>	
+	</div>
+
+
+
+<pre class="big3D5" style="position:absolute;top:0px;left:850px;" id="RANDS"/></pre>
+<pre class="big3D5" style="position:absolute;top:0px;left:850px;" id="RANDS1"/></pre>
+<pre class="big3D5" style="position:absolute;top:0px;left:850px;" id="RANDSS"/></pre>
+<pre class="big3D5" style="position:absolute;top:0px;left:850px;" id="RANDP"/></pre>
+
+
+
+
+
+
+
+
+
+</div>   <!--*****************END boxgame ******************--> 
+
+
+
+  <!--*****************ENDGAME ******************-->  
+  <!--*****************ENDGAME ******************--> 
+<!-- ################################# END OF THE GAME ###########################################--> 
+ 
+</div>    <!--*****************END class center big img ******************-->  
+
+<script type="application/javascript">
+window.onload = Init;  
+</script>
+ 	
+ 
+
+
+ </div>
+ 
+
+
+<div class="centerBGIMG"> 
+<div id="HELP" style="position:absolute;top:320px;margin-left:-10px;">Help</div>
+<div id="HELP2" style="position:absolute;top:200px;">
+ <pre class="bigA2" style="margin-top:-10px;margin-right:-70px;text-align:left;">  
+* Left click continuously to let's plane fly.
+* AUTO fire:fly aligned with the enemies, the plane 
+  will bombed automatically.
+* MAN fire:doublclick to bombed the enemies.
+* You can change level & plane type from top menu.
+* If you can't play the game after loading finished
+  please update your browser to newer version.
+</pre>
+</div>
+
+
+<div id="HELPa" style="position:absolute;top:343px;margin-left:-10px;">مساعدة</div>
+<div id="HELP2a" style="position:absolute;top:200px;">
+ <pre class="bigA2" style="margin-top:-10px;margin-right:-60px;">  
+اضغط على الزر الأيسر باستمرار لكي تحلق الطائرة *
+القصف الألي : حلق نحو الهدف سيتم قصفه اليا * 
+القصف اليدوي:اضغط مرتين على الزر الأيسر ليتم القصف *
+يمكن تغيير المرحلة او شكل الطائرة من القائمة العلوية *
+
+اذا لم تشتغل اللعبة بعد اكتمال التحميل الرجاء * 
+تحديث المتصفح الخاص بك الى نسخة حديثة
+</pre>
+</div>
+
+
+</body>
+</html>

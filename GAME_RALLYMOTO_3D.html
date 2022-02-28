@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<!--<style type="text/css">body {cursor: url('M2.png'), auto;}</style>-->
+<head>
+<title>My Moto:دراجتي</title>
+<meta charset="utf-8">
+
+<meta name="description" content="tecnia.host22: play rally game">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="tecnia.host22, rally, game" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+<style>
+div#load_screen2{
+	background: #000;
+	opacity: 1;
+	position: fixed;
+    z-index:10;
+	top: 0px;
+	/*width: 960px;height: 470px;*/
+	width: 100%;height: 100%;background-color:black;
+		}
+		
+}
+div#load_screen2 > div#loading2{
+	color:#FFF;
+	/*width:120px;
+	height:24px;
+	margin: 200px auto;*/
+	width: 100%;height: 100%;background-color:black;
+}
+</style>
+
+<script>
+window.addEventListener("load", function(){
+	var load_screen2 = document.getElementById("load_screen2");
+	document.body.removeChild(load_screen2);
+
+
+});
+</script>
+
+</head>
+
+<body> 
+
+
+<div id="load_screen2" style="position:absolute;">
+<div id="loading2" style="position:absolute;top:45%;left:45%;">انتظر التحميل
+Waite loading
+<IMG SRC="img/preloader1.gif" alt="abdelghani gheddab"style="margin-left:65px;"> 
+</div></div>
+
+
+ <!--   *****************BEGIN GAME ******************-->    
+ <!--   *****************BEGIN GAME ******************-->    
+<style> 
+		body, html {
+			margin: 0; 
+			padding: 0; 
+			overflow: hidden;
+			/*width: 950px;height: 467px;*/
+			width: 100%;height: 100%;background-color:black;
+		}
+		canvas {
+			width: 100%;
+			height: 100%;
+		}	
+		
+			
+		#TOPmenu {
+			position: absolute;
+			left: 5%;
+			top: -20px;
+			width: 95%;
+			height: 125px;
+			z-index: 999;
+			margin-left:-37px;
+			margin-top:-37px;border-radius:40px;
+			opacity:0.5;
+			background-image: url(img/TEXT1.gif);background-repeat: repeat;}
+			
+	
+        #ENERG {
+			position: absolute;
+			right: 40px;bottom: 108px;
+			width: 30px;
+			height: 300px;
+			border-radius:40px;
+			border:3px solid var(--primary);//var(--primary);
+			background-color:var(--primary);opacity:0.7;box-shadow:0 0 20px var(--primary);}
+			
+</style>
+
+
+	<div id="TOPmenu"></div> 	
+
+ 
+
+  
+	 <!--	
+     <IMG SRC="img/game/KEY.png" alt="key" id="KEY1" style="position:absolute;top:15px;left:45%" class="BOMBANM1"/>
+	 <IMG SRC="img/game/KEY.png" alt="key" id="KEY2" style="position:absolute;top:15px;left:50%" class="BOMBANM1"/>
+	 <IMG SRC="img/game/KEY.png" alt="key" id="KEY3" style="position:absolute;top:15px;left:55%" class="BOMBANM1"/> -->
+
+	<IMG SRC="img/game/MAPMOTOMAP2.png" alt="map" style="width:140px;height:140px;position:absolute;top:25px;left:100px;opacity:0.6;"id="MAP2" class="FFF"/>
+    <IMG SRC="img/game/MAPMOTOMAP1.png" alt="map" style="width:140px;height:140px;position:absolute;top:25px;left:100px;opacity:0.6;"id="MAP1" class="FFF"/>
+    <IMG SRC="img/game/MAPMOTOMAP3.png" alt="map" style="width:140px;height:140px;position:absolute;top:25px;left:100px;opacity:0.6;"id="MAP3" class="FFF"/>
+    <IMG SRC="img/game/MAPMOTOMAP4.png" alt="map" style="width:140px;height:140px;position:absolute;top:25px;left:100px;opacity:0.6;"id="MAP4" class="FFF"/>
+ 
+ 
+ <!--<IMG SRC="img/game/2MAP0.png" alt="map" style="width:140px;height:140px;position:absolute;top:25px;left:12%" class="FFF"/>
+
+   <pre class="bigA5" style="position:absolute;top:30px;right:300px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="TEST1"/></pre>-->
+   <pre class="bigA5" style="position:absolute;top:90px;right:300px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="TEST2"/></pre>
+   <pre class="bigA5" style="position:absolute;top:330px;right:300px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="TEST3"/></pre>
+	
+	<canvas id="renderCanvas"></canvas>
+	
+	
+	<pre class="bigA5" style="position:absolute;top:-60px;right:60px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="seconds2"/></pre>
+	<pre class="bigA5" style="position:absolute;top:-60px;right:120px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)"/>:</pre>
+    <pre class="bigA5" style="position:absolute;top:-60px;right:140px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="minutes2"/></pre>
+   
+ 	
+   	<IMG SRC="img/game/SPEED1GAS.png" alt="map" style="width:107px;height:107px;border-radius: 50%;position:absolute;bottom:4px;left:140px;opacity:0.7;" class="FFF"/>
+	<IMG SRC="img/game/ENERG.png" alt="maklouf"style="position:absolute;left:151px;bottom:17px;" id="ENERGicon" class="opacityy4"/>
+    <img src="img/game/RAKAS5.png"  alt="PLAYER.POS" id="RAKASGAS" style="width:20px;height:90px;position:absolute;bottom:14px;left:180px;";class="FFF" />
+	
+	<pre class="big3" style="position:absolute;bottom:0px;left:170px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="score"/></pre>
+	<pre class="big3" style="position:absolute;bottom:0px;left:200px;color: var(--primary);text-shadow:0 0 10px var(--primary)">%</pre>	
+
+	 <IMG SRC="img/game/SPEED1.png" alt="map" style="width:167px;height:167px;border-radius: 50%;position:absolute;bottom:20px;left:10px;opacity:0.7;" class="FFF"/>
+
+  
+	
+	
+   <pre class="big3" style="position:absolute;bottom:20px;left:60px;font-size: 35px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="speed"/></pre>
+	<img src="img/game/RAKAS5.png"  alt="PLAYER.POS" id="RAKAS2" style="position:absolute;bottom:35px;left:78px;";class="FFF" />
+	<pre class="big1" style="position:absolute;bottom:19px;left:100px;color: var(--primary);text-shadow:0 0 10px var(--primary)">Km/h</pre>
+	
+	
+	
+	<pre class="big3" style="position:absolute;top:-20px;left:270px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="CAMX"/></pre>
+	<pre class="big3" style="position:absolute;top:-20px;left:350px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="CAMY"/></pre> 
+	
+<!--	<pre class="big3" style="position:absolute;top:-20px;left:410px;color: var(--primary);text-shadow:0 0 10px var(--primary)">rot:       °:الدوران</pre>
+	<pre class="big3" style="position:absolute;top:-20px;left:450px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="DIRXZ"/></pre>
+	-->
+	<pre class="big3" style="position:absolute;top:-16px;left:60px;color: var(--primary);text-shadow:0 0 10px var(--primary)">                  N
+	
+	
+   W                       E  
+	
+	
+	          S</pre>
+
+	<div class='CLOCROTSMLB' style="position:absolute;top:6px;left:85px;width:150px;height:150px;"></div>
+	<img src="img/game/RAKAS2.png"  alt="PLAYER.POS" id="RAKAS" style="position:absolute;top:15px;left:155px;";class="FFF" />
+	
+	<img src="img/game/P1.png"  alt="MONSTER.POS" id="monsterPOS" style="position:absolute;top:65px;left:175px;width:0px;height:0px;";class="FFF" />	 
+	
+	<img src="img/game/R1.png"  alt="PLAYER.POS" id="BOUSL" style="position:absolute;top:0px;left:155px;";class="FFF" />
+	<div id="playerPOS"></div> 
+	
+     <div id="" style="position:absolute;top:180px;left:-37px;
+	
+	width: 70px;
+			height: 165px;
+			z-index: 999;
+			border-radius:20px;
+			opacity:0.5;
+			background-color:black;">
+
+
+            <img src="img/game/RAW01.png"alt="maklouf" style="position:absolute;top:10px;right:0px;width:60px;height:60px;" class="opacityy4" onclick="javascript: MOTTO2()"/>
+			<img src="img/game/RAW1.png"alt="maklouf" style="position:absolute;top:55px;right:0px;width:60px;height:60px;"  class="opacityy4"onclick="javascript: MOTTO3()"/>
+ 	     	<img src="img/game/RAW0.png"alt="maklouf" style="position:absolute;top:	100px;right:0px;width:60px;height:60px;" class="opacityy4" onclick="javascript: MOTTO1()"/>
+			</div> 		
+
+				 <div id="" style="position:absolute;top:0px;left:-5px;
+	
+	width: 120px;
+			height: 115px;
+			z-index: 999;
+			border-radius:10px;
+			<!--background-color:black;-->
+			">
+
+			<img src="img/game/CAR1.MOTO.png"alt="maklouf" style="width:70px;height:40px;position:absolute;top:0px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR1()"/>
+ 	     	<img src="img/game/CAR1.png"alt="maklouf" style="width:70px;height:30px;position:absolute;top:40px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR2()"/>
+		</div> 	
+
+
+    
+<!--
+         <img src="img/game/WAHA3.jpg"alt="maklouf" style="position:absolute;top:265px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY1();restartt()"/>
+ 	     <img src="img/game/WAHA4.jpg"alt="maklouf" style="position:absolute;top:320px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY2();restartt()"/>
+		 <img src="img/game/WAHA5.jpg"alt="maklouf" style="position:absolute;top:365px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY3();restartt()"/>
+				
+-->
+
+    <IMG SRC="img/STT1.png" alt="maklouf"style="position:absolute;top:0px;right:0px;" id="STARTicon"class="opacityy4" onclick="javascript: Startt()"/>
+   <IMG SRC="img/STT2.png" alt="maklouf"style="position:absolute;top:0px;right:0px;" id="STOPicon" class="opacityy4"onclick="javascript: Startt()"/>
+   <IMG SRC="img/STT3.png" alt="maklouf"style="position:absolute;top:60px;right:0px;" id="RESTARTicon" class="opacityy4" onclick="javascript: restartt()"/>
+  
+  
+  
+ 
+	
+	<div id="" style="position:absolute;bottom:30px;right:-35px;
+	
+	        width: 103px;
+			height: 210px;
+			z-index: 999;
+			border-radius:10px;
+			opacity:0.7;
+			background-color:black;">
+
+			<img src="img/game/WAHA3.jpg"alt="maklouf" style="position:absolute;top:2px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY1();restartt()"/>
+ 	     	<img src="img/game/WAHA4.jpg"alt="maklouf" style="position:absolute;top:55px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY2();restartt()"/>
+			<img src="img/game/WAHA5.jpg"alt="maklouf" style="position:absolute;top:107px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY3();restartt()"/>
+			<img src="img/game/WAHA6.jpg"alt="maklouf" style="position:absolute;top:160px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY4();restartt()"/>
+			
+		</div> 
+  
+  
+ <!--  <img src="img/game/WAHA3.jpg"alt="maklouf" style="width: 10%;height: 10%;position:absolute;bottom:2px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY1();restartt()"/>
+ <img src="img/game/WAHA4.jpg"alt="maklouf" style="position:absolute;top:55px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY2();restartt()"/>
+			<img src="img/game/WAHA5.jpg"alt="maklouf" style="position:absolute;top:107px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY3();restartt()"/>
+			<img src="img/game/WAHA6.jpg"alt="maklouf" style="position:absolute;top:160px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY4();restartt()"/>
+			-->	
+  
+  <IMG SRC="img/game/sun.png" alt="s"style="position:absolute;top:120px;right:0px;"id="SUNicon"class="opacityy4"onclick="javascript:SUN1()"/>
+ <IMG SRC="img/game/moon.png" alt="m"style="position:absolute;top:70px;right:70px;"id="MOONicon"class="opacityy4"onclick="javascript:SUN0()"/>
+   
+   
+  <!--<img src="img/game/sun1.png"alt="maklouf" style="position:absolute;top:65px;right:110px"  class="opacityy4" "/>
+ 	
+<div id="" style="position:absolute;top:75px;right:35px;">
+<input type="range" min="0" max="10" value="9" step="1" onchange="showValue(this.value)" /></div> 
+<div id="" style="position:absolute;top:75px;right:95px;">	
+<span id="range" style="position:absolute;top:20px;right:25px;font-size: 20px;color: #F00;text-shadow:0 0 15px #F00">9</span>
+</div>
+-->
+				
+	
+		
+ <div id="pleaseRELOAD" style="position:absolute;top:140px;right:1px;width:170px;height:40px;">
+
+<pre class="bigA2" style="margin-top:0px;margin-right:45px;font-size:9px;">اذا لم تظهراللعبةاضغط </pre>
+<pre class="bigA2" style="left:5px;text-align:left;top:5px;font-size:7px;">if the game don't appear click</pre>
+
+<a href="GAME_RALLYMOTO_3D.html" ><img src="img/STT3.png" alt="tecnia.host22"
+style="position:absolute;top:0px;left:115px;width:40px;"class="opacityy4"/></a>
+</div>
+ 
+ 
+ 
+<div id="HELP" style="position:absolute;top:133px;left:-15px;">
+مساعدة</div>
+
+<div id="HELP2" style="position:absolute;top:280px;height:140px;">
+ <pre class="bigA2" style="margin-top:-5px;margin-right:-60px;"> 
+ ← ↑↓ →  يكن الحركة بواسطة اسهم لوحة المفاتيح *
+  اذا لم تظهرالدراجة بعد اكتمال التحميل قم بتحديث الصفحة *
+:اذا لم تشتغل اللعبة بعد اكتمال التحميل الرجاء * 
+تحديث المتصفح الخاص بك الى نسخة حديثة
+الخاص ببطاقة الصورة driver تأكد من تثبيت 
+</pre>
+</div>
+
+
+<div id="HELPa" style="position:absolute;top:110px;left:-15px;">
+Help</div>
+
+<div id="HELP2a" style="position:absolute;top:280px;height:160px;">
+<pre class="bigA2" style="margin-top:-5px;margin-right:-50px;text-align:left;">  
+* You can move by keyboard arrow  ← ↑↓ →
+* If the MOTO don't appear after loading complete 
+        please refresh the page.
+* If you can't play the game after loading finished
+  please update your browser to newer version.
+  Ensure that the card graphic driver is installing.
+</pre>
+</div>
+
+
+
+
+
+
+
+
+
+<!--</div>    *****************END LOADER ******************--> 
+</div> <!--*****************ENDGAME ******************-->  
+  <!--*****************ENDGAME ******************--> 
+<!-- ################################# END OF THE GAME ###########################################--> 
+ 
+</div>    <!--*****************END class center big img ******************-->  
+
+
+<script src="js/babylon.js"></script>
+<script src="js/hand.minified-1.2.js"></script>		
+<script src="GAME_RALLYMOTO_3D.js"></script>
+<script src="waterMaterial.js"></script>
+<!--
+<div id="pleaseRELOAD" style="position:absolute;top:300px;left:1px;">
+
+<pre class="bigA2" style="margin-top:0px;margin-right:-10px;">اذا لم تظهرالدراجة بعد
+:اكتمال التحميل اضغط هنا</pre>
+<pre class="bigA2" style="left:0px;text-align:left;top:80px;">click here if the MOTO don't 
+appear after loading complete</pre>
+
+
+<a href="RALLYMOTO.html" ><img src="img/ST2.png" alt="tecnia.host22"
+style="position:absolute;top:40px;left:75px;"class="opacityy4"/></a>
+</div>
+ -->
+
+
+<script>
+	runDemo("renderCanvas");
+</script>    
+
+
+
+
+
+
+
+ 
+
+</body>
+</html>
+

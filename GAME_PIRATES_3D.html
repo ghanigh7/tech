@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<head>
+<title>7 PIRATES : 7 القراصنة</title>
+<meta charset="utf-8">
+
+<meta name="description" content="tecnia.host22: play plane game">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="tecnia.host22, plane game" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+<style>
+div#load_screen2{
+	background: #000;
+	opacity: 1;
+	position: fixed;
+    z-index:10;
+	top: 0px;
+	/*width: 960px;height: 470px;*/
+	width: 100%;height: 100%;background-color:black;
+		}
+		
+}
+div#load_screen2 > div#loading2{
+	color:#FFF;
+	/*width:120px;
+	height:24px;
+	margin: 200px auto;*/
+	width: 100%;height: 100%;background-color:black;
+}
+</style>
+
+<script>
+window.addEventListener("load", function(){
+	var load_screen2 = document.getElementById("load_screen2");
+	document.body.removeChild(load_screen2);
+
+
+});
+</script>
+
+</head>
+
+<body> 
+
+
+<div id="load_screen2" style="position:absolute;">
+<div id="loading2" style="position:absolute;top:45%;left:45%;">انتظر التحميل
+Waite loading
+<IMG SRC="img/preloader1.gif" alt="abdelghani gheddab"style="margin-left:65px;"> 
+</div></div>
+
+
+ <!--   *****************BEGIN GAME ******************-->    
+ <!--   *****************BEGIN GAME ******************-->    
+<style> 
+		body, html {
+			margin: 0; 
+			padding: 0; 
+			overflow: hidden;
+			/*width: 950px;height: 467px;*/
+			width: 100%;height: 100%;background-color:black;
+		}
+		canvas {
+			width: 100%;
+			height: 100%;
+		}	
+		
+			
+		#TOPmenu {
+			position: absolute;
+			left: 5%;
+			top: -20px;
+			width: 95%;
+			height: 125px;
+			z-index: 999;
+			margin-left:-37px;
+			margin-top:-37px;border-radius:40px;
+			opacity:0.5;
+			background-image: url(img/TEXT1.gif);background-repeat: repeat;}
+			
+		#TOPmenu2 {
+			position: absolute;
+			left: 50%;
+			top: 20%;
+			width: 500px;
+			height: 300px;	
+			margin-left:-25%;
+			border-radius:40px;
+			opacity:0.7;
+			background-image: url(img/TEXT1.gif);background-repeat: repeat;}		
+			
+        #ENERG {
+			position: absolute;
+			right: 40px;bottom: 108px;
+			width: 30px;
+			height: 300px;
+			border-radius:40px;
+			border:3px solid var(--primary);
+			background-color:var(--primary);opacity:0.7;box-shadow:0 0 20px var(--primary);}
+			
+</style>
+
+
+
+
+
+	<div id="TOPmenu"></div> 
+	
+<div id="TOPmenu2">
+<pre class="bigA5" style="position:absolute;top:30px;right:1px;font-size: 30px;color: var(--primary);text-shadow:0 0 10px var(--primary)"/>
+هنيـــــئا لقد حطــــــــــمت القرصـــــان
+
+
+
+
+Congratulation you destroy the pirate</pre>
+<pre class="bigA5" style="position:absolute;top:70px;right:240px;font-size: 55px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="PIRATENUMBER"> 
+</pre>
+</div> 		
+ <!--	<img src="img/game/BB5.png" alt="gun2" id="BULLETX" style="position:absolute;bottom:10px;right:0%;" class="FFF" /> 
+	<img src="img/game/BB5.png" alt="gun2" id="BULLETX2" style="position:absolute;bottom:10px;right:2%;" class="FFF" /> 
+	<img src="img/game/BB5.png" alt="gun2" id="BULLETX3" style="position:absolute;bottom:10px;right:4%;" class="FFF" /> 
+	<img src="img/game/BB5.png" alt="gun2" id="BULLETX4" style="position:absolute;bottom:10px;right:6%;" class="FFF" /> 
+	<img src="img/game/BB5.png" alt="gun2" id="BULLETX5" style="position:absolute;bottom:10px;right:8%;" class="FFF" /> 
+-->
+   <IMG SRC="img/STT1.png" alt="maklouf"style="position:absolute;bottom:10px;right:0px;" id="STARTicon"class="opacityy4" onclick="javascript: BigScreen();Startt()"/>
+   <IMG SRC="img/STT2.png" alt="maklouf"style="position:absolute;bottom:10px;right:0px;" id="STOPicon" class="opacityy4"onclick="javascript: Startt()"/>
+   <IMG SRC="img/STT3.png" alt="maklouf"style="position:absolute;bottom:10px;right:70px;" id="RESTARTicon" class="opacityy4" onclick="javascript: restartt()"/>
+ 
+ 
+   <!--<IMG SRC="img/game/snip1.png" alt="maklouf"style="position:absolute;bottom:40%;left:50%;margin-left:0px;" id="SNIPicon" class="opacityy4"/>
+ 
+  <IMG SRC="img/game/M2.png" alt="maklouf"style="position:absolute;top:130px;right:30px;" id="MISSILicon" class="opacityy4"/>
+ 
+
+ 
+	
+   <pre class="bigA5" style="position:absolute;top:30px;right:300px;font-size: 55px;color: #0084ff;text-shadow:0 0 15px #0084ff" id="TEST1"/></pre>
+   <pre class="bigA5" style="position:absolute;top:90px;right:300px;font-size: 55px;color: #0084ff;text-shadow:0 0 15px #0084ff" id="TEST2"/></pre>
+   <pre class="bigA5" style="position:absolute;top:330px;right:300px;font-size: 55px;color: #0084ff;text-shadow:0 0 15px #0084ff" id="TEST3"/></pre>-->
+	
+	<canvas id="renderCanvas"></canvas>
+	
+	
+    <pre class="bigA5" style="position:absolute;top:-60px;right:60px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="seconds2"/></pre>
+	<pre class="bigA5" style="position:absolute;top:-60px;right:120px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)"/>:</pre>
+    <pre class="bigA5" style="position:absolute;top:-60px;right:140px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="minutes2"/></pre>
+   
+ 	<pre class="big3" style="position:absolute;top:20px;left:530px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="score"/></pre>
+	<pre class="big3" style="position:absolute;top:20px;left:400px;color: var(--primary);text-shadow:0 0 10px var(--primary)">م              m</pre>	
+	
+	
+	 <IMG SRC="img/game/SPEED6.jpg" alt="map" style="border-radius: 50%;position:absolute;bottom:17px;left:8px;opacity:0.7;" class="FFF"/>
+	
+  
+	
+	
+   <pre class="big3" style="position:absolute;bottom:20px;left:60px;font-size: 35px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="speed"/></pre>
+	<img src="img/game/RAKAS5.png"  alt="PLAYER.POS" id="RAKAS2" style="position:absolute;bottom:35px;left:78px;";class="FFF" />
+	<pre class="big1" style="position:absolute;bottom:19px;left:100px;color: var(--primary);text-shadow:0 0 10px var(--primary)">Km/h</pre>
+	
+	
+	
+	
+	<pre class="big3" style="position:absolute;top:-20px;left:270px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="CAMX"/></pre>
+	<pre class="big3" style="position:absolute;top:-20px;left:350px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="CAMY"/></pre> 
+	
+<!--	<pre class="big3" style="position:absolute;top:-20px;left:410px;color: #0084ff;text-shadow:0 0 10px #0084ff">rot:       °:الدوران</pre>
+	<pre class="big3" style="position:absolute;top:-20px;left:450px;color: #0084ff;text-shadow:0 0 10px #0084ff" id="DIRXZ"/></pre>
+	
+	-->
+		
+   <IMG SRC="img/game/RADAR4.jpg" alt="map" style="width:167px;height:167px;border-radius: 50%;position:absolute;top:10px;left:88px;opacity:0.7;" class="FFF"/>
+ 
+ <div class='CLOCROTSMLB' style="position:absolute;top:6px;left:85px;width:150px;height:150px;"></div>
+
+	<pre class="big3" style="position:absolute;top:-16px;left:60px;color: var(--primary);text-shadow:0 0 10px var(--primary)">                  N
+	
+	
+   W                       E  
+	
+	
+	          S</pre>
+<!--
+	<div class='CLOCROTBG' style="position:absolute;top:6px;left:85px;width:150px;height:150px;"></div>
+	-->
+	<img src="img/game/RAKAS2.png"  alt="PLAYER.POS" id="RAKAS" style="position:absolute;top:15px;left:155px;";class="FFF" />
+	
+<img src="img/game/PIRATEicon1.png"alt="MONSTER.POS" id="monsterPOS"  style="position:absolute;top:0px;left:155px;"class="FFF" />
+<img src="img/game/P1.png"alt="MONSTER.POS" id="monsterPOS2" style="position:absolute;top:0px;left:155px;"class="FFF" />
+<img src="img/game/PIRATEicon3.png"alt="MONSTER.POS" id="monsterPOS3" style="position:absolute;top:0px;left:155px;"class="FFF" />
+<img src="img/game/PIRATEicon4.png"alt="MONSTER.POS" id="monsterPOS4" style="position:absolute;top:0px;left:155px;"class="FFF" />
+<img src="img/game/PIRATEicon5.png"alt="MONSTER.POS" id="monsterPOS5" style="position:absolute;top:0px;left:155px;"class="FFF" />
+<img src="img/game/PIRATEicon6.png"alt="MONSTER.POS" id="monsterPOS6" style="position:absolute;top:0px;left:155px;"class="FFF" />
+<img src="img/game/PIRATEicon7.png"alt="MONSTER.POS" id="monsterPOS7" style="position:absolute;top:0px;left:155px;"class="FFF" />
+	 
+	
+	<img src="img/game/R2.png"  alt="PLAYER.POS" id="BOUSL" style="position:absolute;top:0px;left:155px;";class="FFF" />
+	<div id="playerPOS" style="position:absolute;top:0px;left:155px;margin-top:15px;margin-left:15px;"></div> 
+	<div id="ENERG"style="position:absolute;bottom:110px;right:7px;width:10px;"></div> 
+	
+	<!--<IMG SRC="img/game/ENERG1.png" alt="maklouf"style="position:absolute;bottom:300px;right:10px;" id="ENERGicon" class="opacityy4"/>
+                   -->
+ 
+
+	<!-- <div id="" style="position:absolute;top:158px;left:-5px;
+	
+	width: 120px;
+			height: 115px;
+			z-index: 999;
+			border-radius:10px;
+			opacity:0.7;
+			background-color:black;">
+
+			<img src="img/game/BOAT1.png"alt="maklouf" style="position:absolute;top:5px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY1()"/>
+ 	     	<img src="img/game/BOAT2.png"alt="maklouf" style="position:absolute;top:60px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY2()"/>
+		</div> 	-->
+
+		<div id="" style="position:absolute;top:0px;left:-5px;
+	        width: 120px;
+			height: 115px;
+			z-index: 999;
+			border-radius:10px;">
+			<!--background-color:black;
+				     	<img src="img/game/BOAT2.png"alt="maklouf" style="position:absolute;top:35px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR2()"/>-->
+			<img src="img/game/BOAT1.png"alt="maklouf" style="width:80px;height:35px;position:absolute;top:0px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR1()"/>
+		    <img src="img/game/BOAT3.png"alt="maklouf" style="width:80px;height:35px;position:absolute;top:30px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR3()"/>
+		</div> 		
+
+
+<img src="img/game/PIRATEicon1.png"  alt="MONSTER.POS" id="PIRATEicon1" style="position:absolute;top:20px;right:500px;";class="FFF" />
+<img src="img/game/P1.png"           alt="MONSTER.POS" id="PIRATEicon2" style="position:absolute;top:20px;right:450px;";class="FFF" />
+<img src="img/game/PIRATEicon3.png"  alt="MONSTER.POS" id="PIRATEicon3" style="position:absolute;top:15px;right:400px;";class="FFF" />
+<img src="img/game/PIRATEicon4.png"  alt="MONSTER.POS" id="PIRATEicon4" style="position:absolute;top:20px;right:350px;";class="FFF" />
+<img src="img/game/PIRATEicon5.png"  alt="MONSTER.POS" id="PIRATEicon5" style="position:absolute;top:20px;right:300px;";class="FFF" />
+<img src="img/game/PIRATEicon6.png"  alt="MONSTER.POS" id="PIRATEicon6" style="position:absolute;top:20px;right:250px;";class="FFF" />
+<img src="img/game/PIRATEicon7.png"  alt="MONSTER.POS" id="PIRATEicon7" style="position:absolute;top:15px;right:200px;";class="FFF" />
+	   
+<!--<img src="img/game/sun1.png"alt="maklouf" style="position:absolute;top:65px;right:110px"  class="opacityy4" "/>
+ 	
+<div id="" style="position:absolute;top:75px;right:35px;">
+<input type="range" min="0" max="10" value="10" step="1" onchange="showValue(this.value)" /></div> 
+<div id="" style="position:absolute;top:75px;right:95px;">	
+<span id="range" style="position:absolute;top:20px;right:25px;font-size: 20px;color: var(--primary);text-shadow:0 0 15px var(--primary)">10</span>
+</div>-->
+	   
+<div id="pleaseRELOAD" style="position:absolute;top:230px;left:1px;width:170px;height:40px;">
+
+<pre class="bigA2" style="margin-top:0px;margin-right:45px;font-size:9px;">اذا لم تظهراللعبةاضغط </pre>
+<pre class="bigA2" style="left:5px;text-align:left;top:5px;font-size:7px;">if the game don't appear click</pre>
+
+<a href="GAME_PIRATES_3D.html" ><img src="img/STT3.png" alt="tecnia.host22"
+style="position:absolute;top:0px;left:115px;width:40px;"class="opacityy4"/></a>
+</div>
+	   
+
+<div id="HELP" style="position:absolute;top:133px;left:-15px;">
+مساعدة</div>
+
+<div id="HELP2" style="position:absolute;top:280px;height:130px;">
+ <pre class="bigA2" style="margin-top:-5px;margin-right:-60px;"> 
+استعمل متصفح كروم اذا كانت الأمواج لا تتحرك *
+ ← ↑ →  يكن الحركة بواسطة اسهم لوحة المفاتيح * 
+اضغط على الفأرة مرة واحدة للقفز ومرتين للسرعة العظمى * 
+و حاول الأصطدام برأس القرصان
+اذا لم يظهر القارب بعد اكتمال التحميل قم بتحديث الصفحة *
+:اذا لم تشتغل اللعبة بعد اكتمال التحميل الرجاء * 
+تحديث المتصفح الخاص بك الى نسخة حديثة
+الخاص ببطاقة الصورة driver تأكد من تثبيت 
+</pre>
+</div>
+
+
+<div id="HELPa" style="position:absolute;top:110px;left:-15px;">
+Help</div>
+
+<div id="HELP2a" style="position:absolute;top:280px;height:130px;">
+ <pre class="bigA2" style="margin-top:-5px;margin-right:-50px;text-align:left;">  
+* Use Chrome browser if the waves are not moving 
+* You can move by keyboard arrow  ← ↑ →
+* One click to jump & dbl click to max speed & try 
+   to crash by pirate head.
+* If the boat don't appear after loading complete 
+        please refresh the page.
+* If you can't play the game after loading finished
+  please update your browser to newer version.
+  Ensure that the card graphic driver is installing.
+</pre>
+</div>
+
+<!--</div>    *****************END LOADER ******************--> 
+</div> <!--*****************ENDGAME ******************-->  
+  <!--*****************ENDGAME ******************--> 
+<!-- ################################# END OF THE GAME ###########################################--> 
+ 
+</div>    <!--*****************END class center big img ******************-->  
+
+<pre class="big2" style="position:absolute;bottom:-10px;left:10px;color:black;font-size:11px;">
+Use Chrome browser if the waves are not moving  استعمل متصفح كروم اذا كانت الأمواج لا تتحرك </pre>
+
+
+
+
+<script src="js/babylon.js"></script>
+<script src="js/hand.minified-1.2.js"></script>		
+<script src="GAME_PIRATES_3D.js"></script>
+<script src="waterMaterial.js"></script>
+<!--<script src="waterMaterial.js"></script>-->
+
+
+<script>
+	runDemo("renderCanvas");
+</script>    
+
+
+
+
+</body>
+</html>
+

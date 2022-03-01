@@ -7,7 +7,7 @@
 <meta name="robots" content="index,follow">
 <meta name="keywords" content="tecnia.host22, snowpirate game" />
 
-<link rel="stylesheet" href="css/styleGAME.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
 <style>
 div#load_screen2{
@@ -99,8 +99,8 @@ Waite loading
 			width: 30px;
 			height: 300px;
 			border-radius:40px;
-			border:3px solid #F00;
-			background-color:#F00;opacity:0.7;box-shadow:0 0 20px #F00;}*/
+			border:3px solid var(--primary);
+			background-color:var(--primary);opacity:0.7;box-shadow:0 0 20px var(--primary);}*/
 			
 </style>
 
@@ -115,20 +115,20 @@ Waite loading
 	<div id="TOPmenu"></div> 	
 
 <div id="TOPmenu2">
-<pre class="bigA5" style="position:absolute;top:30px;right:0px;font-size: 30px;color: #F00;text-shadow:0 0 10px #F00"/>هنيئا لقد تحصلت على المـــــــــــــــاسة
+<pre class="bigA5" style="position:absolute;top:30px;right:0px;font-size: 30px;color: var(--primary);text-shadow:0 0 10px var(--primary)"/>هنيئا لقد تحصلت على المـــــــــــــــاسة
 
 
 
 
 Congratulation you find the diamond</pre>
-<pre class="bigA5" style="position:absolute;top:70px;right:240px;font-size: 55px;color: #F00;text-shadow:0 0 10px #F00" id="KEYNUMBER"> 
+<pre class="bigA5" style="position:absolute;top:70px;right:240px;font-size: 55px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="KEYNUMBER"> 
 </pre>
 </div> 
 		
 		
-   <IMG SRC="img/STT1.png" alt="maklouf"style="position:absolute;bottom:10px;right:10px;" id="STARTicon"class="opacityy4" onclick="javascript: BigScreen();Startt()"/>
-   <IMG SRC="img/STT2.png" alt="maklouf"style="position:absolute;bottom:10px;right:10px;" id="STOPicon" class="opacityy4"onclick="javascript: Startt()"/>
-   <IMG SRC="img/STT3.png" alt="maklouf"style="position:absolute;bottom:10px;right:80px;" id="RESTARTicon" class="opacityy4" onclick="javascript: restartt()"/>
+   <IMG SRC="img/STT1.png" alt="maklouf"style="position:absolute;bottom:10px;right:0px;" id="STARTicon"class="opacityy4" onclick="javascript: BigScreen();Startt()"/>
+   <IMG SRC="img/STT2.png" alt="maklouf"style="position:absolute;bottom:10px;right:0px;" id="STOPicon" class="opacityy4"onclick="javascript: Startt()"/>
+   <IMG SRC="img/STT3.png" alt="maklouf"style="position:absolute;bottom:10px;right:70px;" id="RESTARTicon" class="opacityy4" onclick="javascript: restartt()"/>
   
 
 	
@@ -139,11 +139,11 @@ Congratulation you find the diamond</pre>
 	<canvas id="renderCanvas"></canvas>
 
  
- <!--	<pre class="big3" style="position:absolute;top:80px;right:100px;font-size: 55px;color: #F00;text-shadow:0 0 15px #F00" id="time"/></pre>
+ <!--	<pre class="big3" style="position:absolute;top:80px;right:100px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="time"/></pre>
     -->
-    <pre class="bigA5" style="position:absolute;top:-30px;right:60px;font-size: 55px;color: #0F0;text-shadow:0 0 15px #0F0" id="seconds2"/></pre>
-	<pre class="bigA5" style="position:absolute;top:-30px;right:120px;font-size: 55px;color: #0F0;text-shadow:0 0 15px #0F0"/>:</pre>
-    <pre class="bigA5" style="position:absolute;top:-30px;right:140px;font-size: 55px;color: #0F0;text-shadow:0 0 15px #0F0" id="minutes2"/></pre>
+    <pre class="bigA5" style="position:absolute;top:-60px;right:60px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="seconds2"/></pre>
+	<pre class="bigA5" style="position:absolute;top:-60px;right:120px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)"/>:</pre>
+    <pre class="bigA5" style="position:absolute;top:-60px;right:140px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="minutes2"/></pre>
    
  	
  
@@ -152,38 +152,38 @@ Congratulation you find the diamond</pre>
 	
 	 <!--
    
-	<IMG SRC="img/game/SPEEDSS.png" alt="map" style="position:absolute;bottom:0px;left:0px;opacity:0.7;" class="FFF"/>
+	<IMG SRC="img_game/SPEEDSS.png" alt="map" style="position:absolute;bottom:0px;left:0px;opacity:0.7;" class="FFF"/>
  	-->
 	
- <!-- --> <IMG SRC="img/game/SPEED3GAS.jpg" alt="map" style="width:107px;height:107px;border-radius: 50%;position:absolute;bottom:4px;left:140px;opacity:0.7;" class="FFF"/>
+ <!-- --> <IMG SRC="img_game/SPEED3GAS.jpg" alt="map" style="width:107px;height:107px;border-radius: 50%;position:absolute;bottom:4px;left:140px;opacity:0.7;" class="FFF"/>
 	 
-	 <img src="img/game/RAKAS5.png"  alt="PLAYER.POS" id="RAKASGAS" style="width:20px;height:90px;position:absolute;bottom:14px;left:180px;";class="FFF" />
+	 <img src="img_game/RAKAS5.png"  alt="PLAYER.POS" id="RAKASGAS" style="width:20px;height:90px;position:absolute;bottom:14px;left:180px;";class="FFF" />
 	
-	<IMG SRC="img/game/ENERG.png" alt="maklouf"style="width:40px;height:40px;position:absolute;" id="ENERGicon" class="opacityy4"/>
+	<IMG SRC="img_game/ENERG.png" alt="maklouf"style="width:40px;height:40px;position:absolute;" id="ENERGicon" class="opacityy4"/>
   
 	
 	
-	<pre class="big3" style="position:absolute;bottom:0px;left:170px;color: #0F0;text-shadow:0 0 15px #0F0" id="score"/></pre>
-	<pre class="big3" style="position:absolute;bottom:0px;left:200px;color: #0F0;text-shadow:0 0 15px #0F0">%</pre>	
+	<pre class="big3" style="position:absolute;bottom:0px;left:170px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="score"/></pre>
+	<pre class="big3" style="position:absolute;bottom:0px;left:200px;color: var(--primary);text-shadow:0 0 15px var(--primary)">%</pre>	
 	
 	
-	<!----> <IMG SRC="img/game/SPEED3.jpg" alt="map" style="width:167px;height:167px;border-radius: 50%;position:absolute;bottom:20px;left:10px;opacity:0.7;" class="FFF"/>
+	<!----> <IMG SRC="img_game/SPEED3.jpg" alt="map" style="width:167px;height:167px;border-radius: 50%;position:absolute;bottom:20px;left:10px;opacity:0.7;" class="FFF"/>
  	
-    <pre class="big3" style="position:absolute;bottom:20px;left:60px;font-size: 35px;color: #0F0;text-shadow:0 0 15px #0F0" id="speed"/></pre>
-	<img src="img/game/RAKAS5.png"  alt="PLAYER.POS" id="RAKAS2" style="position:absolute;bottom:35px;left:78px;";class="FFF" />
-	<pre class="big1" style="position:absolute;bottom:19px;left:100px;color: #0F0;text-shadow:0 0 15px #0F0">Km/h</pre>
+    <pre class="big3" style="position:absolute;bottom:20px;left:60px;font-size: 35px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="speed"/></pre>
+	<img src="img_game/RAKAS5.png"  alt="PLAYER.POS" id="RAKAS2" style="position:absolute;bottom:35px;left:78px;";class="FFF" />
+	<pre class="big1" style="position:absolute;bottom:19px;left:100px;color: var(--primary);text-shadow:0 0 15px var(--primary)">Km/h</pre>
 	
 	
 	
-	<pre class="big3" style="position:absolute;top:-20px;left:270px;color: #0F0;text-shadow:0 0 15px #0F0" id="CAMX"/></pre>
-	<pre class="big3" style="position:absolute;top:-20px;left:350px;color: #0F0;text-shadow:0 0 15px #0F0" id="CAMY"/></pre> 
+	<pre class="big3" style="position:absolute;top:-20px;left:270px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="CAMX"/></pre>
+	<pre class="big3" style="position:absolute;top:-20px;left:350px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="CAMY"/></pre> 
 	
 <!--	<pre class="big3" style="position:absolute;top:-20px;left:410px;color: #0084ff;text-shadow:0 0 10px #0084ff">rot:       °:الدوران</pre>
 	<pre class="big3" style="position:absolute;top:-20px;left:450px;color: #0084ff;text-shadow:0 0 10px #0084ff" id="DIRXZ"/></pre>
 	-->
 	
 			
-   <IMG SRC="img/game/RADAR.jpg" alt="map" style="width:167px;height:167px;border-radius: 50%;position:absolute;top:7px;left:86px;opacity:0.7;" class="FFF"/>
+   <IMG SRC="img_game/RADAR.jpg" alt="map" style="width:167px;height:167px;border-radius: 50%;position:absolute;top:7px;left:86px;opacity:0.7;" class="FFF"/>
  
 	<pre class="big3" style="position:absolute;top:-16px;left:60px;color: #0084ff;text-shadow:0 0 10px #0084ff">                  N
 	
@@ -195,22 +195,22 @@ Congratulation you find the diamond</pre>
 
 	
 	<div class='CLOCROTSMLG' style="position:absolute;top:6px;left:85px;width:150px;height:150px;"></div>
-	<img src="img/game/RAKAS2.png"  alt="PLAYER.POS" id="RAKAS" style="position:absolute;top:15px;left:155px;";class="FFF" />
+	<img src="img_game/RAKAS2.png"  alt="PLAYER.POS" id="RAKAS" style="position:absolute;top:15px;left:155px;";class="FFF" />
 	
-	<img src="img/game/DIAMONDicon1.png"alt="MONSTER.POS" id="monsterPOS"  style=          "width:35px;height:35px;position:absolute;top:8px;left:162px;"class="FFF" />
-	<img src="img/game/DIAMONDicon2.png"alt="MONSTER.POS" id="monsterPOS2" style=
+	<img src="img_game/DIAMONDicon1.png"alt="MONSTER.POS" id="monsterPOS"  style=          "width:35px;height:35px;position:absolute;top:8px;left:162px;"class="FFF" />
+	<img src="img_game/DIAMONDicon2.png"alt="MONSTER.POS" id="monsterPOS2" style=
 	"width:35px;height:35px;position:absolute;top:8px;left:162px;"class="FFF" />
-	<img src="img/game/DIAMONDicon3.png"alt="MONSTER.POS" id="monsterPOS3" style="width:35px;height:35px;position:absolute;top:8px;left:162px;"class="FFF" />
-	<img src="img/game/DIAMONDicon4.png"alt="MONSTER.POS" id="monsterPOS4" style="width:35px;height:35px;position:absolute;top:8px;left:162px;"class="FFF" />
+	<img src="img_game/DIAMONDicon3.png"alt="MONSTER.POS" id="monsterPOS3" style="width:35px;height:35px;position:absolute;top:8px;left:162px;"class="FFF" />
+	<img src="img_game/DIAMONDicon4.png"alt="MONSTER.POS" id="monsterPOS4" style="width:35px;height:35px;position:absolute;top:8px;left:162px;"class="FFF" />
 	
 	
-	<img src="img/game/R2.png"       alt="PLAYER.POS" id="BOUSL"      style="position:absolute;top:0px;left:155px;"class="FFF" />
+	<img src="img_game/R2.png"       alt="PLAYER.POS" id="BOUSL"      style="position:absolute;top:0px;left:155px;"class="FFF" />
 	<div id="playerPOS" style="position:absolute;top:0px;left:155px;margin-top:15px;margin-left:15px;"></div> 
 	
 
 	
 
-    <div id="" style="position:absolute;top:270px;right:-5px;
+    <div id="" style="position:absolute;top:170px;right:-25px;
 	
 	width: 70px;
 			height: 165px;
@@ -220,48 +220,50 @@ Congratulation you find the diamond</pre>
 			background-color:black;">
 
 
-            <img src="img/game/RAW1.png"alt="maklouf" style="position:absolute;top:10px;right:0px;width:60px;height:60px;" class="opacityy4" onclick="javascript: MOTTO1()"/>
-			<img src="img/game/RAW01.png"alt="maklouf" style="position:absolute;top:55px;right:0px;width:60px;height:60px;"  class="opacityy4"onclick="javascript: MOTTO2()"/>
- 	     	<img src="img/game/RAW0.png"alt="maklouf" style="position:absolute;top:	100px;right:0px;width:60px;height:60px;" class="opacityy4" onclick="javascript: MOTTO3()"/>
+            <img src="img_game/RAW1.png"alt="maklouf" style="position:absolute;top:10px;right:0px;width:60px;height:60px;" class="opacityy4" onclick="javascript: MOTTO1()"/>
+			<img src="img_game/RAW01.png"alt="maklouf" style="position:absolute;top:55px;right:0px;width:60px;height:60px;"  class="opacityy4"onclick="javascript: MOTTO2()"/>
+ 	     	<img src="img_game/RAW0.png"alt="maklouf" style="position:absolute;top:	100px;right:0px;width:60px;height:60px;" class="opacityy4" onclick="javascript: MOTTO3()"/>
 		<!--	
-		    <img src="img/game/CAR0.png"alt="maklouf" style="position:absolute;top:200px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR1()"/>
- 	     	<img src="img/game/CAR2.png"alt="maklouf" style="position:absolute;top:245px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR2()"/>
+		    <img src="img_game/CAR0.png"alt="maklouf" style="position:absolute;top:200px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR1()"/>
+ 	     	<img src="img_game/CAR2.png"alt="maklouf" style="position:absolute;top:245px;right:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR2()"/>
 	-->
 		
 		</div> 
 	<!--<div id="ENERG"></div>
-	<IMG SRC="img/game/ENERG1.png" alt="maklouf"style="position:absolute;bottom:300px;right:10px;" id="ENERGicon" class="opacityy4"/>
+	<IMG SRC="img_game/ENERG1.png" alt="maklouf"style="position:absolute;bottom:300px;right:10px;" id="ENERGicon" class="opacityy4"/>
   -->
  
-<img src="img/game/DIAMONDicon1.png"alt="KEY" id="KEYicon1" style="position:absolute;top:20px;right:550px;"class="BOMBANM1" />
-<img src="img/game/DIAMONDicon2.png"alt="KEY" id="KEYicon2" style="position:absolute;top:20px;right:500px;"class="BOMBANM1" />
-<img src="img/game/DIAMONDicon3.png"alt="KEY" id="KEYicon3" style="position:absolute;top:15px;right:450px;"class="BOMBANM1" />
-<img src="img/game/DIAMONDicon4.png"alt="KEY" id="KEYicon4" style="position:absolute;top:20px;right:400px;"class="BOMBANM1" />
+<img src="img_game/DIAMONDicon1.png"alt="KEY" id="KEYicon1" style="position:absolute;top:0px;right:550px;"class="BOMBANM1" />
+<img src="img_game/DIAMONDicon2.png"alt="KEY" id="KEYicon2" style="position:absolute;top:0px;right:500px;"class="BOMBANM1" />
+<img src="img_game/DIAMONDicon3.png"alt="KEY" id="KEYicon3" style="position:absolute;top:0px;right:450px;"class="BOMBANM1" />
+<img src="img_game/DIAMONDicon4.png"alt="KEY" id="KEYicon4" style="position:absolute;top:0px;right:400px;"class="BOMBANM1" />
  
   
 	<!--<div id="ENERG"></div>
-	<IMG SRC="img/game/ENERG1.png" alt="maklouf"style="position:absolute;bottom:300px;right:10px;" id="ENERGicon" class="opacityy4"/>  id="SUN1icon"   id="SUN0icon"
+	<IMG SRC="img_game/ENERG1.png" alt="maklouf"style="position:absolute;bottom:300px;right:10px;" id="ENERGicon" class="opacityy4"/>  id="SUN1icon"   id="SUN0icon"
   -->
   
   
- <IMG SRC="img/game/sun.png" alt="s"style="position:absolute;top:60px;right:80px;"id="SUNicon"class="opacityy4"onclick="javascript:SUN1()"/>
- <IMG SRC="img/game/moon.png" alt="m"style="position:absolute;top:70px;right:80px;"id="MOONicon"class="opacityy4"onclick="javascript:SUN0()"/>
+ <IMG SRC="img_game/sun.png" alt="s"style="position:absolute;top:60px;right:0px;"id="SUNicon"class="opacityy4"onclick="javascript:SUN1()"/>
+ <IMG SRC="img_game/moon.png" alt="m"style="position:absolute;top:70px;right:0px;"id="MOONicon"class="opacityy4"onclick="javascript:SUN0()"/>
    
 	
 
-<div id="pleaseRELOAD" style="position:absolute;top:230px;left:1px;width:170px;height:40px;">
-<pre class="bigA2" style="margin-top:0px;margin-right:45px;font-size:9px;">اذا لم تظهراللعبةاضغط </pre>
-<pre class="bigA2" style="left:5px;text-align:left;top:5px;font-size:7px;">if the game don't appear click</pre>
+ 
+  <div id="pleaseRELOAD" style="position:absolute;top:230px;left:1px;width:150px;height:40px;">
+<pre class="bigA2" style="margin-top:5px;margin-right:25px;font-size:9px;">اذا لم تظهراللعبةاضغط </pre>
+<pre class="bigA2" style="left:5px;text-align:left;top:10px;font-size:7px;">if the game don't appear click</pre>
 <a href="GAME_SNOWMAN_3D.html" ><img src="img/STT3.png" alt="tecnia.host22"
-style="position:absolute;top:0px;left:115px;width:40px;"class="opacityy4"/></a>
+style="position:absolute;top:0px;left:105px;width:40px;"class="opacityy4"/></a>
 </div>
- 
- 
+
+
+
 <div id="HELP" style="position:absolute;top:80px;left:-15px;">
 مساعدة</div>
 
 <div id="HELP2" style="position:absolute;top:280px;">
- <pre class="bigA2" style="margin-top:-25px;margin-right:-60px;"> 
+ <pre class="bigA2" style="margin-top:-5px;margin-right:-60px;"> 
 ابحث عن الماسة في كل مرحلة *  
  ← ↑↓ →  يكن الحركة بواسطة اسهم لوحة المفاتيح *
 اضغط على الفأرة مرة واحدة للقفز ومرتين للسرعة العظمى *
@@ -273,11 +275,11 @@ style="position:absolute;top:0px;left:115px;width:40px;"class="opacityy4"/></a>
 </div>
 
 
-<div id="HELPa" style="position:absolute;top:120px;left:-15px;">
+<div id="HELPa" style="position:absolute;top:103px;left:-15px;">
 Help</div>
 
 <div id="HELP2a" style="position:absolute;top:280px;height:220px;">
- <pre class="bigA2" style="margin-top:-25px;margin-right:-50px;text-align:left;"> 
+ <pre class="bigA2" style="margin-top:-5px;margin-right:-50px;text-align:left;"> 
 * Find the diamond from all levels
 * One click to jump & dbl click to max speed  
 * You can move by keyboard arrow  ← ↑↓ →

@@ -18,10 +18,10 @@ body {color: #76777D;font-family: Arial, Helvetica, sans-serif;font-size: 16px;f
 
 /*textarea#styled{position:absolute;margin:0 auto;width:800px;height:230px;border:8px solid #333;border-radius:20px;padding:5px;color:#fff;font-family:Tahoma,sans-serif;background:url(MAP/TEXT1.gif) top left}
 */
-textarea#styled{width:400px;height:230px;border:8px solid var(--primary);border-radius:20px;padding:5px;color:#fff;font-family:Tahoma,sans-serif;font-size: 13px;background-color:black;}
+textarea#styled{width:320px;height:230px;border:6px solid var(--primary);border-radius:20px;padding:0px;color:#fff;font-family:Tahoma,sans-serif;font-size: 13px;background-color:black;}
 
 .logoTXT {font-family:TESLA;color:var(--primary);text-shadow: 9px 9px 25px white;}
-.ayaTXT {text-align: center;margin-top:-73px;font-family:ARABIC;font-size:13px;}
+.ayaTXT {text-align: center;margin-top:-73px;font-family:ARABIC;font-size:13px;color:#777;opacity:0.8;}
 
 .IMGbottom {position:absolute;width:935px; height:30px;padding: 12px 10px;margin:0 auto;text-align:center;color: #777;font-family: Tahoma, Geneva, sans-serif;font-size: 26px;background: rgba(0,0,0,0.7);border-top: 1px solid rgb(66,66,66);margin-left:5px;}
 
@@ -38,10 +38,9 @@ text-align: center;color: #777;font-size: 16px;background: black;opacity:0.85;
 padding: 2px 22px 2px 22px;border-radius:25px;-moz-border-radius:25px;-webkit-border-radius:25px;-ms-border-radius:5px;-o-border-radius:5px;}
 
 
-.txt_carousel,.txt_carousels{font-family:TESLA;}
-.txt_carouselar,.txt_carouselsar{font-family:ARABIC;}
 .txt_carousels,.txt_carouselsar {transition:all .7s ease;-moz-transition:all .7s ease;-webkit-transition:all .7s ease;-o-transition:all .7s ease;
-position:absolute;padding: 10px 10px;margin:0;left:0; right:0; bottom: 5px;
+position:absolute;padding: 10px 10px;
+left:0; right:0; bottom: 5px;/*margin:0;left:0; right:0; bottom: 5px;*/
 text-align:center;color: #777;
 font-size: 17px;
 background: rgba(0,0,0,0.8);border-top: 2px solid var(--primary);
@@ -51,6 +50,11 @@ background: rgba(0,0,0,0.8);border-top: 2px solid var(--primary);
 -o-animation: figcaptionner 27s infinite;
 animation: figcaptionner 27s infinite;
 -moz-animation: figcaptionner 27s infinite;}
+
+
+
+.txt_carousel,.txt_carousels{font-family:TESLA;}
+.txt_carouselar,.txt_carouselsar{font-family:ARABIC;}
 
 @-moz-keyframes figcaptionner    {0%, 20%, 40%, 60%, 80%, 100%{ bottom: -45px;}5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%{ bottom: 0px;}}
 @-webkit-keyframes figcaptionner {0%, 20%, 40%, 60%, 80%, 100%{ bottom: -45px;}5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%{ bottom: 0px;}}
@@ -224,7 +228,8 @@ text-shadow: 5px 5px 19px white;
 }
 
 .navbar {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    /*box-shadow: 0 0 30px rgba(0, 0, 0, 1);*/
+	box-shadow: 0 8px 32px 0 rgba( 31, 138, 135, 0.99 );
 }
 
 .navbar .dropdown-toggle::after {
@@ -281,11 +286,18 @@ text-shadow: 5px 5px 19px white;
 
 
 .navbar{
+     background: black;opacity:0.85;
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 4px );-webkit-backdrop-filter: blur( 4px );
+	border-radius: 0px;border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+/*
+.navbar{
 	background: rgba( 11, 11, 11, 0.55 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 	backdrop-filter: blur( 4px );-webkit-backdrop-filter: blur( 4px );
-	border-radius: 10px;border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
+	border-radius: 0px;border: 1px solid rgba( 255, 255, 255, 0.18 );
+}*/
 
 .navbar-light .navbar-nav .nav-link {
 	color:white;font-family:Arial, Geneva, sans-serif;
@@ -324,14 +336,14 @@ text-shadow: 5px 5px 19px white;
 }
 
 .header-carousel {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0rem;/*1.5*/
+    padding-right: 0rem;
 }
 
 @media (min-width: 576px) {
     .header-carousel {
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 0rem;/*4*/
+        padding-right: 0rem;
     }
 }
 
@@ -709,6 +721,7 @@ pre.big2,pre.bigA2,pre.big3,pre.big4,pre.big5,pre.bigA3,pre.bigA4,pre.bigA5
 {font-family: Tahoma, Geneva, sans-serif;color:#fff;opacity:1;border-radius: 15px;}
 pre.bigA2,pre.bigA3,pre.bigA4,pre.bigA5{text-align:right;position:absolute;right:20%;}
 pre.big2,pre.bigA2 { font-size: 12px;}
+pre.big3{ font-size: 20px;}
 
 #MENU-IMG {height:98px;width:260px;margin:3em auto;margin-top:-20px;text-align:right;position:relative;opacity:0.7;}#MENU-IMG:hover{opacity:1;margin-top:40px;}	
 #MENU-IMG a, #MENU-IMG:hover a:focus {display:inline-block;width:30px;height:98px;overflow:hidden;position:relative;z-index:1;}
@@ -732,14 +745,19 @@ pre.big2,pre.bigA2 { font-size: 12px;}
 #HELPa:hover{opacity:0.8;} #HELP2a{padding:0;margin:0;width:3px;height:2px;background:black;opacity:0;} 
 #HELPa:hover+#HELP2a{width:300px;height:110px;opacity:0.8;}
 #HELPa,#HELP2a,#pleaseRELOAD{-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;}
+#pleaseRELOAD{padding:0;margin:0;background:black;width:200px;height:150px;opacity:0.9;}
 
 #HELP:hover,#HELPa:hover{-webkit-transform:translate(30px);transform:translate(30px);-moz-transform:translate(30px);-ms-transform:translate(30px);-o-transform:translate(30px);}
-.CLOCROTSML{border:10px solid var(--primary);color:opacity:0.9;
-border-top:10px solid var(--primary);border-left:10px solid rgba(0,0,0,0);
-border-right:10px solid rgba(0,0,0,0);border-radius:60px;
-box-shadow:0 0 25px var(--primary);width:60px;height:60px;margin:0 auto;
+.CLOCROTSML,.CLOCROTSMLB{border:10px solid var(--primary);opacity:0.9;
+border-top:10px solid rgba(0,0,0,0);border-left:10px solid rgba(0,0,0,0);border-right:10px solid rgba(0,0,0,0);
+box-shadow:0 0 25px var(--primary);
+margin:0 auto;
 -moz-animation:spin .5s infinite linear;
--webkit-animation:spin .5s infinite linear;-o-animation:spin .5s infinite linear;-ms-animation:spin .5s infinite linear;animation:spin .5s infinite linear;background:rgba(0,0,0,0)}
+-webkit-animation:spin .5s infinite linear;-o-animation:spin .5s infinite linear;
+-ms-animation:spin .5s infinite linear;animation:spin .5s infinite linear;
+background:rgba(0,0,0,0)}
+.CLOCROTSML{border-radius:60px;width:60px;height:60px;}
+.CLOCROTSMLB{border-radius:180px;width:180px;height:180px;}
 
 
 pre.txtGREENS{font-family:DIGITAL;font-size: 35px;color: var(--primary);text-shadow:0 0 10px;}

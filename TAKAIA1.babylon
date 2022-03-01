@@ -1,5 +1,5 @@
 {"autoClear":true,"clearColor":[0,0,0],"ambientColor":[0,0,0],"gravity":[0,-9.81,0],
-"materials":[{"name":"TAKAIA1BEST.Material__25","id":"TAKAIA1BEST.Material__25","ambient":[0.8,0.8,0.8],"diffuse":[0.64,0.64,0.64],"specular":[0.5,0.5,0.5],"emissive":[0,0,0],"specularPower":50,"alpha":1,"backFaceCulling":true, "diffuseTexture":{"name":"img/game/3D/TAKAIA1.jpg","level":1,"hasAlpha":1,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":1,"vScale":1,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0}}],
+"materials":[{"name":"TAKAIA1BEST.Material__25","id":"TAKAIA1BEST.Material__25","ambient":[0.8,0.8,0.8],"diffuse":[0.64,0.64,0.64],"specular":[0.5,0.5,0.5],"emissive":[0,0,0],"specularPower":50,"alpha":1,"backFaceCulling":true, "diffuseTexture":{"name":"DATASECRYGH11/images/game/3D/TAKAIA1.jpg","level":1,"hasAlpha":1,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":1,"vScale":1,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0}}],
 "multiMaterials":[],
 "skeletons":[],
 "meshes":[{"name":"Lambo","id":"Lambo","materialId":"TAKAIA1BEST.Material__25","billboardMode":0,"position":[1.387,-4.4073,-1.8494],"rotation":[-1.6236,0,0],"scaling":[0.1062,0.1062,0.1062],"isVisible":true,"isEnabled":true,"useFlatShading":false,"checkCollisions":false,"receiveShadows":false

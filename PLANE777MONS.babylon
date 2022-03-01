@@ -1,6 +1,6 @@
 {"autoClear":true,"clearColor":[0,0,0],"ambientColor":[0,0,0],"gravity":[0,-9.81,0],
 "materials":[{"name":"PLANE777MONS.Material.001","id":"PLANE777MONS.Material.001","ambient":[0.8,0.8,0.8],"diffuse":[0.64,0.64,0.64],"specular":[0.5,0.5,0.5],"emissive":[0,0,0],"specularPower":50,"alpha":1,"backFaceCulling":true, 
-"diffuseTexture":{"name":"images/PLANE777MONS.jpg","level":1,"hasAlpha":1,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":1,"vScale":1,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0}}],
+"diffuseTexture":{"name":"img/game/3D/PLANE777MONS.jpg","level":1,"hasAlpha":1,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":1,"vScale":1,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0}}],
 "multiMaterials":[],
 "skeletons":[],
 "meshes":[{"name":"$$$DUMMY.Group01","id":"$$$DUMMY.Group01","position":[0,0.7672,1.0229],"rotation":[0,0,0],"scaling":[0.5499,0.5499,0.5499],"isVisible":false,"isEnabled":true,"checkCollisions":false,"billboardMode":0,"receiveShadows":false},{"name":"O_samolet1","id":"O_samolet1","parentId":"$$$DUMMY.Group01","materialId":"PLANE777MONS.Material.001","billboardMode":0,"position":[-1.2131,-10.2991,-5.404],"rotation":[-0.1863,-0.421,-0.0522],"scaling":[0.5152,0.5152,0.5152],"isVisible":true,"isEnabled":true,"useFlatShading":false,"checkCollisions":false,"receiveShadows":false

@@ -1,5 +1,5 @@
 {"autoClear":true,"clearColor":[0,0,0],"ambientColor":[0,0,0],"gravity":[0,-9.81,0],
-"materials":[{"name":"SNOWCAR.Material111","id":"SNOWCAR.Material111","ambient":[0.8,0.8,0.8],"diffuse":[0.64,0.64,0.64],"specular":[0.5,0.5,0.5],"emissive":[0,0,0],"specularPower":50,"alpha":1,"backFaceCulling":true, "diffuseTexture":{"name":"DATASECRYGH11/images/game/3D/SNOWCAR.jpg","level":1,"hasAlpha":1,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":1,"vScale":1,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0}}],
+"materials":[{"name":"SNOWCAR.Material111","id":"SNOWCAR.Material111","ambient":[0.8,0.8,0.8],"diffuse":[0.64,0.64,0.64],"specular":[0.5,0.5,0.5],"emissive":[0,0,0],"specularPower":50,"alpha":1,"backFaceCulling":true, "diffuseTexture":{"name":"img/game/3D/SNOWCAR.jpg","level":1,"hasAlpha":1,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":1,"vScale":1,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0}}],
 "multiMaterials":[],
 "skeletons":[],
 "meshes":[{"name":"Lambo","id":"Lambo","materialId":"SNOWCAR.Material111","billboardMode":0,"position":[-1.9513,-3.0382,1.6382],"rotation":[-1.5708,0,0],"scaling":[0.0908,0.0908,0.0908],"isVisible":true,"isEnabled":true,"useFlatShading":false,"checkCollisions":false,"receiveShadows":false

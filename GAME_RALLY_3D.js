@@ -245,7 +245,7 @@ var UPRR3=0;// up for BOMB
 //################################# KEY BOARD CONTROL ############################
 //################################# KEY BOARD CONTROL ############################
 //################################# KEY BOARD CONTROL ############################
-var keys={letft:0,right:0,forward:0,back:0};
+/*var keys={letft:0,right:0,forward:0,back:0};
 window.addEventListener("keydown", handleKeyDown, false);
 window.addEventListener("keyup", handleKeyUp, false);
 
@@ -259,9 +259,16 @@ function handleKeyUp(evt){
     if (evt.keyCode==37){keys.left=0;}
     if (evt.keyCode==39){keys.right=0;}
     if (evt.keyCode==38){keys.forward=0;}
-    if (evt.keyCode==40){keys.back=0;}   }
+    if (evt.keyCode==40){keys.back=0;}   }*/
 
 
+	var keys={letft:0,right:0,forward:0,back:0};
+	function UP(){keys.forward=1;keys.back=0;keys.left=0;keys.right=0;}
+	function DOWN(){keys.forward=0;keys.back=0;keys.left=0;keys.right=0;}
+	function LEFT(){keys.forward=0;keys.back=0;keys.left=1;keys.right=0;}
+	function RIGHT(){keys.forward=0;keys.back=0;keys.left=0;keys.right=1;}
+	function UNLOOK(){keys.forward=0;keys.back=0;keys.left=0;keys.right=0;}
+	
 var HANDCONTROL=0;	
 function HAND1(){  HANDCONTROL=1;BOUTTON1.play();}
 function HAND2(){  HANDCONTROL=0;BOUTTON1.play();}

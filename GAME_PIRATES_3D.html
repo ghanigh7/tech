@@ -7,7 +7,7 @@
 <meta name="robots" content="index,follow">
 <meta name="keywords" content="tecnia.host22, plane game" />
 
-<link rel="stylesheet" href="css/styleGAME.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
 <style>
 div#load_screen2{
@@ -96,8 +96,8 @@ Waite loading
 			width: 30px;
 			height: 300px;
 			border-radius:40px;
-			border:3px solid #FE210E;
-			background-color:#FE210E;opacity:0.7;box-shadow:0 0 20px #FE210E;}
+			border:3px solid var(--primary);
+			background-color:var(--primary);opacity:0.7;box-shadow:0 0 20px var(--primary);}
 			
 </style>
 
@@ -108,14 +108,14 @@ Waite loading
 	<div id="TOPmenu"></div> 
 	
 <div id="TOPmenu2">
-<pre class="bigA5" style="position:absolute;top:30px;right:1px;font-size: 30px;color: #FE210E;text-shadow:0 0 10px #FE210E"/>
+<pre class="bigA5" style="position:absolute;top:30px;right:1px;font-size: 30px;color: var(--primary);text-shadow:0 0 10px var(--primary)"/>
 هنيـــــئا لقد حطــــــــــمت القرصـــــان
 
 
 
 
 Congratulation you destroy the pirate</pre>
-<pre class="bigA5" style="position:absolute;top:70px;right:240px;font-size: 55px;color: #FE210E;text-shadow:0 0 10px #FE210E" id="PIRATENUMBER"> 
+<pre class="bigA5" style="position:absolute;top:70px;right:240px;font-size: 55px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="PIRATENUMBER"> 
 </pre>
 </div> 		
  <!--	<img src="img/game/BB5.png" alt="gun2" id="BULLETX" style="position:absolute;bottom:10px;right:0%;" class="FFF" /> 
@@ -124,9 +124,9 @@ Congratulation you destroy the pirate</pre>
 	<img src="img/game/BB5.png" alt="gun2" id="BULLETX4" style="position:absolute;bottom:10px;right:6%;" class="FFF" /> 
 	<img src="img/game/BB5.png" alt="gun2" id="BULLETX5" style="position:absolute;bottom:10px;right:8%;" class="FFF" /> 
 -->
-   <IMG SRC="img/STT1.png" alt="maklouf"style="position:absolute;bottom:10px;right:10px;" id="STARTicon"class="opacityy4" onclick="javascript: BigScreen();Startt()"/>
-   <IMG SRC="img/STT2.png" alt="maklouf"style="position:absolute;bottom:10px;right:10px;" id="STOPicon" class="opacityy4"onclick="javascript: Startt()"/>
-   <IMG SRC="img/STT3.png" alt="maklouf"style="position:absolute;bottom:10px;right:80px;" id="RESTARTicon" class="opacityy4" onclick="javascript: restartt()"/>
+   <IMG SRC="img/STT1.png" alt="maklouf"style="position:absolute;bottom:10px;right:0px;" id="STARTicon"class="opacityy4" onclick="javascript: BigScreen();Startt()"/>
+   <IMG SRC="img/STT2.png" alt="maklouf"style="position:absolute;bottom:10px;right:0px;" id="STOPicon" class="opacityy4"onclick="javascript: Startt()"/>
+   <IMG SRC="img/STT3.png" alt="maklouf"style="position:absolute;bottom:10px;right:70px;" id="RESTARTicon" class="opacityy4" onclick="javascript: restartt()"/>
  
  
    <!--<IMG SRC="img/game/snip1.png" alt="maklouf"style="position:absolute;bottom:40%;left:50%;margin-left:0px;" id="SNIPicon" class="opacityy4"/>
@@ -143,12 +143,12 @@ Congratulation you destroy the pirate</pre>
 	<canvas id="renderCanvas"></canvas>
 	
 	
-    <pre class="bigA5" style="position:absolute;top:-30px;right:60px;font-size: 55px;color: #FE210E;text-shadow:0 0 15px #FE210E" id="seconds2"/></pre>
-	<pre class="bigA5" style="position:absolute;top:-30px;right:120px;font-size: 55px;color: #FE210E;text-shadow:0 0 15px #FE210E"/>:</pre>
-    <pre class="bigA5" style="position:absolute;top:-30px;right:140px;font-size: 55px;color: #FE210E;text-shadow:0 0 15px #FE210E" id="minutes2"/></pre>
+    <pre class="bigA5" style="position:absolute;top:-60px;right:60px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="seconds2"/></pre>
+	<pre class="bigA5" style="position:absolute;top:-60px;right:120px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)"/>:</pre>
+    <pre class="bigA5" style="position:absolute;top:-60px;right:140px;font-size: 55px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="minutes2"/></pre>
    
- 	<pre class="big3" style="position:absolute;top:20px;left:530px;color: #FE210E;text-shadow:0 0 15px #FE210E" id="score"/></pre>
-	<pre class="big3" style="position:absolute;top:20px;left:400px;color: #FE210E;text-shadow:0 0 10px #FE210E">م              m</pre>	
+ 	<pre class="big3" style="position:absolute;top:20px;left:530px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="score"/></pre>
+	<pre class="big3" style="position:absolute;top:20px;left:400px;color: var(--primary);text-shadow:0 0 10px var(--primary)">م              m</pre>	
 	
 	
 	 <IMG SRC="img/game/SPEED6.jpg" alt="map" style="border-radius: 50%;position:absolute;bottom:17px;left:8px;opacity:0.7;" class="FFF"/>
@@ -156,15 +156,15 @@ Congratulation you destroy the pirate</pre>
   
 	
 	
-   <pre class="big3" style="position:absolute;bottom:20px;left:60px;font-size: 35px;color: #FE210E;text-shadow:0 0 15px #FE210E" id="speed"/></pre>
+   <pre class="big3" style="position:absolute;bottom:20px;left:60px;font-size: 35px;color: var(--primary);text-shadow:0 0 15px var(--primary)" id="speed"/></pre>
 	<img src="img/game/RAKAS5.png"  alt="PLAYER.POS" id="RAKAS2" style="position:absolute;bottom:35px;left:78px;";class="FFF" />
-	<pre class="big1" style="position:absolute;bottom:19px;left:100px;color: #FE210E;text-shadow:0 0 10px #FE210E">Km/h</pre>
+	<pre class="big1" style="position:absolute;bottom:19px;left:100px;color: var(--primary);text-shadow:0 0 10px var(--primary)">Km/h</pre>
 	
 	
 	
 	
-	<pre class="big3" style="position:absolute;top:-20px;left:270px;color: #FE210E;text-shadow:0 0 10px #FE210E" id="CAMX"/></pre>
-	<pre class="big3" style="position:absolute;top:-20px;left:350px;color: #FE210E;text-shadow:0 0 10px #FE210E" id="CAMY"/></pre> 
+	<pre class="big3" style="position:absolute;top:-20px;left:270px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="CAMX"/></pre>
+	<pre class="big3" style="position:absolute;top:-20px;left:350px;color: var(--primary);text-shadow:0 0 10px var(--primary)" id="CAMY"/></pre> 
 	
 <!--	<pre class="big3" style="position:absolute;top:-20px;left:410px;color: #0084ff;text-shadow:0 0 10px #0084ff">rot:       °:الدوران</pre>
 	<pre class="big3" style="position:absolute;top:-20px;left:450px;color: #0084ff;text-shadow:0 0 10px #0084ff" id="DIRXZ"/></pre>
@@ -173,9 +173,9 @@ Congratulation you destroy the pirate</pre>
 		
    <IMG SRC="img/game/RADAR4.jpg" alt="map" style="width:167px;height:167px;border-radius: 50%;position:absolute;top:10px;left:88px;opacity:0.7;" class="FFF"/>
  
- <div class='CLOCROTSMLR' style="position:absolute;top:6px;left:85px;width:150px;height:150px;"></div>
+ <div class='CLOCROTSMLB' style="position:absolute;top:6px;left:85px;width:150px;height:150px;"></div>
 
-	<pre class="big3" style="position:absolute;top:-16px;left:60px;color: #FE210E;text-shadow:0 0 10px #FE210E">                  N
+	<pre class="big3" style="position:absolute;top:-16px;left:60px;color: var(--primary);text-shadow:0 0 10px var(--primary)">                  N
 	
 	
    W                       E  
@@ -198,7 +198,7 @@ Congratulation you destroy the pirate</pre>
 	
 	<img src="img/game/R2.png"  alt="PLAYER.POS" id="BOUSL" style="position:absolute;top:0px;left:155px;";class="FFF" />
 	<div id="playerPOS" style="position:absolute;top:0px;left:155px;margin-top:15px;margin-left:15px;"></div> 
-	<div id="ENERG"></div> 
+	<div id="ENERG"style="position:absolute;bottom:110px;right:7px;width:10px;"></div> 
 	
 	<!--<IMG SRC="img/game/ENERG1.png" alt="maklouf"style="position:absolute;bottom:300px;right:10px;" id="ENERGicon" class="opacityy4"/>
                    -->
@@ -217,16 +217,15 @@ Congratulation you destroy the pirate</pre>
  	     	<img src="img/game/BOAT2.png"alt="maklouf" style="position:absolute;top:60px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CITY2()"/>
 		</div> 	-->
 
-		<div id="" style="position:absolute;top:158px;left:-5px;
+		<div id="" style="position:absolute;top:0px;left:-5px;
 	        width: 120px;
 			height: 115px;
 			z-index: 999;
 			border-radius:10px;">
 			<!--background-color:black;
 				     	<img src="img/game/BOAT2.png"alt="maklouf" style="position:absolute;top:35px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR2()"/>-->
-			<img src="img/game/BOAT1.png"alt="maklouf" style="position:absolute;top:0px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR1()"/>
- 
-		    <img src="img/game/BOAT3.png"alt="maklouf" style="position:absolute;top:40px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR3()"/>
+			<img src="img/game/BOAT1.png"alt="maklouf" style="width:80px;height:35px;position:absolute;top:0px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR1()"/>
+		    <img src="img/game/BOAT3.png"alt="maklouf" style="width:80px;height:35px;position:absolute;top:30px;left:0px;border-radius:5px;" class="opacityy" onclick="javascript: CARR3()"/>
 		</div> 		
 
 
@@ -243,7 +242,7 @@ Congratulation you destroy the pirate</pre>
 <div id="" style="position:absolute;top:75px;right:35px;">
 <input type="range" min="0" max="10" value="10" step="1" onchange="showValue(this.value)" /></div> 
 <div id="" style="position:absolute;top:75px;right:95px;">	
-<span id="range" style="position:absolute;top:20px;right:25px;font-size: 20px;color: #FE210E;text-shadow:0 0 15px #FE210E">10</span>
+<span id="range" style="position:absolute;top:20px;right:25px;font-size: 20px;color: var(--primary);text-shadow:0 0 15px var(--primary)">10</span>
 </div>-->
 	   
 <div id="pleaseRELOAD" style="position:absolute;top:230px;left:1px;width:170px;height:40px;">
@@ -256,11 +255,11 @@ style="position:absolute;top:0px;left:115px;width:40px;"class="opacityy4"/></a>
 </div>
 	   
 
-<div id="HELP" style="position:absolute;top:80px;left:-15px;">
+<div id="HELP" style="position:absolute;top:133px;left:-15px;">
 مساعدة</div>
 
-<div id="HELP2" style="position:absolute;top:280px;height:190px;">
- <pre class="bigA2" style="margin-top:-25px;margin-right:-60px;"> 
+<div id="HELP2" style="position:absolute;top:280px;height:130px;">
+ <pre class="bigA2" style="margin-top:-5px;margin-right:-60px;"> 
 استعمل متصفح كروم اذا كانت الأمواج لا تتحرك *
  ← ↑ →  يكن الحركة بواسطة اسهم لوحة المفاتيح * 
 اضغط على الفأرة مرة واحدة للقفز ومرتين للسرعة العظمى * 
@@ -273,11 +272,11 @@ style="position:absolute;top:0px;left:115px;width:40px;"class="opacityy4"/></a>
 </div>
 
 
-<div id="HELPa" style="position:absolute;top:120px;left:-15px;">
+<div id="HELPa" style="position:absolute;top:110px;left:-15px;">
 Help</div>
 
-<div id="HELP2a" style="position:absolute;top:280px;height:220px;">
- <pre class="bigA2" style="margin-top:-25px;margin-right:-50px;text-align:left;">  
+<div id="HELP2a" style="position:absolute;top:280px;height:130px;">
+ <pre class="bigA2" style="margin-top:-5px;margin-right:-50px;text-align:left;">  
 * Use Chrome browser if the waves are not moving 
 * You can move by keyboard arrow  ← ↑ →
 * One click to jump & dbl click to max speed & try 

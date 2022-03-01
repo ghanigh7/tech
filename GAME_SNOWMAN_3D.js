@@ -473,7 +473,7 @@ function runDemo(canvasId) {
 			boxkey.visibility = 0;
             // Create a particle system
             var particleSystem = new BABYLON.ParticleSystem("particles", 20000, scene);
-            particleSystem.particleTexture = new BABYLON.Texture("DATASECRYGH11/images/game/flare.png", scene);//flare.png
+            particleSystem.particleTexture = new BABYLON.Texture("img_game/flare.png", scene);//flare.png
         
             // Where the particles come from
             particleSystem.emitter = boxkey; // the starting object, the emitter
@@ -529,23 +529,23 @@ function runDemo(canvasId) {
 
 	
 		 	var BARELM = new BABYLON.StandardMaterial("BAREl", scene);
-	BARELM.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/BA1.jpg", scene);
-	BARELM.bumpTexture = new BABYLON.Texture("DATASECRYGH11/images/game/BA1N.jpg", scene);
+	BARELM.diffuseTexture = new BABYLON.Texture("img_game/BA1.jpg", scene);
+	BARELM.bumpTexture = new BABYLON.Texture("img_game/BA1N.jpg", scene);
 	BARELM.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 	
 	
 		 	var BARELBK = new BABYLON.StandardMaterial("BAREl", scene);
-	BARELBK.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/A00.jpg", scene);
+	BARELBK.diffuseTexture = new BABYLON.Texture("img_game/A00.jpg", scene);
 	BARELBK.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 		
 	
 	var BAREL2 = new BABYLON.StandardMaterial("BAREl", scene);
-	BAREL2.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/BA2.jpg", scene);
-    BAREL2.bumpTexture = new BABYLON.Texture("DATASECRYGH11/images/game/BA2N.jpg", scene);	
+	BAREL2.diffuseTexture = new BABYLON.Texture("img_game/BA2.jpg", scene);
+    BAREL2.bumpTexture = new BABYLON.Texture("img_game/BA2N.jpg", scene);	
 	BAREL2.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 	
 	var boxMaterial = new BABYLON.StandardMaterial("bMaterial", scene);
-	boxMaterial.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/box.jpg", scene);
+	boxMaterial.diffuseTexture = new BABYLON.Texture("img_game/box.jpg", scene);
 	boxMaterial.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0); //box.BARELBOMBS = "BOMB";
 	
 	//var boxC1 = BABYLON.Mesh.CreateCylinder("BAREL", 8, 0.1, 1, 6, scene);boxC1.material = BARELBK;boxC1.position.y=4;
@@ -605,8 +605,8 @@ function runDemo(canvasId) {
 	/*var groundGRBIG = BABYLON.Mesh.CreatePlane("groundGRoutBOG", 4010, scene);
 	groundGRBIG.rotation.x = Math.PI / 2;
 	groundGRBIG.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	groundGRBIG.material.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/WATER1.jpg", scene);//S1 W2  STREET  ground1,ground2;street2:W2;
-	//groundGRBIG.material.bumpTexture = new BABYLON.Texture("DATASECRYGH11/images/game/WATER1B.jpg", scene);
+	groundGRBIG.material.diffuseTexture = new BABYLON.Texture("img_game/WATER1.jpg", scene);//S1 W2  STREET  ground1,ground2;street2:W2;
+	//groundGRBIG.material.bumpTexture = new BABYLON.Texture("img_game/WATER1B.jpg", scene);
 	groundGRBIG.material.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);//(1.0, 1.0, 1.0);
 	//groundGRBIG.material.specularColor = new BABYLON.Color3(0, 0, 0);
 	groundGRBIG.material.diffuseTexture.uScale = 100;
@@ -618,25 +618,25 @@ function runDemo(canvasId) {
 
 
             var groundMaterialWATER = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialWATER.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/WATER1.jpg", scene);//WATER1  snow ground4,snow.
+            groundMaterialWATER.diffuseTexture = new BABYLON.Texture("img_game/WATER1.jpg", scene);//WATER1  snow ground4,snow.
 			groundMaterialWATER.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialWATER.diffuseTexture.uScale = 46;//36
             groundMaterialWATER.diffuseTexture.vScale = 50;//20
 			
             var groundMaterialROCK = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialROCK.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/rock.jpg", scene);// ground1 snow ground4,snow.
+            groundMaterialROCK.diffuseTexture = new BABYLON.Texture("img_game/rock.jpg", scene);// ground1 snow ground4,snow.
 			groundMaterialROCK.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialROCK.diffuseTexture.uScale = 46;//36
             groundMaterialROCK.diffuseTexture.vScale = 50;//20			
 
             var groundMaterialGRASS = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialGRASS.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/ground.jpg", scene);// snow ground4,snow.
+            groundMaterialGRASS.diffuseTexture = new BABYLON.Texture("img_game/ground.jpg", scene);// snow ground4,snow.
 			groundMaterialGRASS.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialGRASS.diffuseTexture.uScale = 46;//36
             groundMaterialGRASS.diffuseTexture.vScale = 50;//20
 			
             var groundMaterialTINE = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialTINE.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/ground1.jpg", scene);// snow ground4,snow.
+            groundMaterialTINE.diffuseTexture = new BABYLON.Texture("img_game/ground1.jpg", scene);// snow ground4,snow.
 			groundMaterialTINE.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialTINE.diffuseTexture.uScale = 46;//36
             groundMaterialTINE.diffuseTexture.vScale = 50;//20*/	
@@ -645,41 +645,41 @@ function runDemo(canvasId) {
 
 			
             var groundMaterialROCK = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialROCK.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/rock4.jpg", scene);// ground1 snow ground4,snow.
+            groundMaterialROCK.diffuseTexture = new BABYLON.Texture("img_game/rock4.jpg", scene);// ground1 snow ground4,snow.
 			groundMaterialROCK.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialROCK.diffuseTexture.uScale = 86;//36
             groundMaterialROCK.diffuseTexture.vScale = 100;//20	
             var groundMaterialROCK2 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialROCK2.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/rock.jpg", scene);// ground1 snow ground4,snow.
+            groundMaterialROCK2.diffuseTexture = new BABYLON.Texture("img_game/rock.jpg", scene);// ground1 snow ground4,snow.
 			groundMaterialROCK2.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialROCK2.diffuseTexture.uScale = 86;//36
             groundMaterialROCK2.diffuseTexture.vScale = 100;//20	
             var groundMaterialROCK3 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialROCK3.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/snow.jpg", scene);// ground1 snow ground4,snow.
+            groundMaterialROCK3.diffuseTexture = new BABYLON.Texture("img_game/snow.jpg", scene);// ground1 snow ground4,snow.
 			groundMaterialROCK3.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialROCK3.diffuseTexture.uScale = 86;//36
             groundMaterialROCK3.diffuseTexture.vScale = 100;//20				
 
    
             var groundMaterialSNOW = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialSNOW.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/snow.jpg", scene);//ground1
+            groundMaterialSNOW.diffuseTexture = new BABYLON.Texture("img_game/snow.jpg", scene);//ground1
 			groundMaterialSNOW.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialSNOW.diffuseTexture.uScale = 496;//36
             groundMaterialSNOW.diffuseTexture.vScale = 490;//20
 			
          
             var groundMaterialFIRE1 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialFIRE1.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/Z7.jpg", scene);//ground1
+            groundMaterialFIRE1.diffuseTexture = new BABYLON.Texture("img_game/Z7.jpg", scene);//ground1
 			groundMaterialFIRE1.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialFIRE1.diffuseTexture.uScale = 96;//36
             groundMaterialFIRE1.diffuseTexture.vScale = 90;//20
             var groundMaterialFIRE2 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialFIRE2.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/rock9.jpg", scene);//ground1
+            groundMaterialFIRE2.diffuseTexture = new BABYLON.Texture("img_game/rock9.jpg", scene);//ground1
 			groundMaterialFIRE2.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialFIRE2.diffuseTexture.uScale = 96;//36
             groundMaterialFIRE2.diffuseTexture.vScale = 90;//20
             var groundMaterialFIRE3 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialFIRE3.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/rock12.jpg", scene);//ground1
+            groundMaterialFIRE3.diffuseTexture = new BABYLON.Texture("img_game/rock12.jpg", scene);//ground1
 			groundMaterialFIRE3.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialFIRE3.diffuseTexture.uScale = 96;//36
             groundMaterialFIRE3.diffuseTexture.vScale = 90;//20
@@ -688,19 +688,19 @@ function runDemo(canvasId) {
 
 			
 			var groundMaterialWATER = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialWATER.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/WATER.jpg", scene);//water snow 
+            groundMaterialWATER.diffuseTexture = new BABYLON.Texture("img_game/WATER.jpg", scene);//water snow 
 			groundMaterialWATER.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialWATER.diffuseTexture.uScale = 146;//36   146
             groundMaterialWATER.diffuseTexture.vScale = 150;//20   150
 			
 			var groundMaterialWATER1 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialWATER1.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/WATER1.jpg", scene);//water snow 
+            groundMaterialWATER1.diffuseTexture = new BABYLON.Texture("img_game/WATER1.jpg", scene);//water snow 
 			groundMaterialWATER1.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialWATER1.diffuseTexture.uScale = 146;//36   146
             groundMaterialWATER1.diffuseTexture.vScale = 150;//20   150
 			
             var groundMaterialWATER2 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialWATER2.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/WATER3.jpg", scene);//WATER1  snow ground4,snow.
+            groundMaterialWATER2.diffuseTexture = new BABYLON.Texture("img_game/WATER3.jpg", scene);//WATER1  snow ground4,snow.
 			groundMaterialWATER2.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialWATER2.diffuseTexture.uScale = 146;//36
             groundMaterialWATER2.diffuseTexture.vScale = 150;//20
@@ -708,24 +708,24 @@ function runDemo(canvasId) {
 		
 		
 	var FIREM = new BABYLON.StandardMaterial("texture1", scene);
-     FIREM.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/Z3.jpg", scene); //PIRATE
-	 //FIREM.bumpTexture = new BABYLON.Texture("DATASECRYGH11/images/game/Z3.BUMP.jpg", scene);
+     FIREM.diffuseTexture = new BABYLON.Texture("img_game/Z3.jpg", scene); //PIRATE
+	 //FIREM.bumpTexture = new BABYLON.Texture("img_game/Z3.BUMP.jpg", scene);
 	 FIREM.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0 );
 	 FIREM.diffuseTexture.uScale = 2;
 	 //FIREM.diffuseTexture.vScale = 10;
 	 
 	 var FIREM2 = new BABYLON.StandardMaterial("texture1", scene);
-     FIREM2.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/Z4.jpg", scene); 
+     FIREM2.diffuseTexture = new BABYLON.Texture("img_game/Z4.jpg", scene); 
 	 FIREM2.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0 );
 	 FIREM2.diffuseTexture.uScale = 2;
 	 
 	 var FIREM3 = new BABYLON.StandardMaterial("texture1", scene);
-     FIREM3.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/Z5.jpg", scene); 
+     FIREM3.diffuseTexture = new BABYLON.Texture("img_game/Z5.jpg", scene); 
 	 FIREM3.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0 );
 	 FIREM3.diffuseTexture.uScale = 2;
 	 
 	 var FIREM4 = new BABYLON.StandardMaterial("texture1", scene);
-     FIREM4.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/BA.jpg", scene); 
+     FIREM4.diffuseTexture = new BABYLON.Texture("img_game/BA.jpg", scene); 
 	 FIREM4.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0 );
 	 FIREM4.diffuseTexture.uScale = 2;
 	 
@@ -734,15 +734,15 @@ function runDemo(canvasId) {
 	   
 	   
 	
-	      var groundMEGAF = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "DATASECRYGH11/images/game/MAPVALEY4.jpg", 15000, 15000, 100, 0, 450.5, scene, false);
+	      var groundMEGAF = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "img_game/MAPVALEY4.jpg", 15000, 15000, 100, 0, 450.5, scene, false);
             groundMEGAF.material = groundMaterialFIRE1;
 			groundMEGAF.position = new BABYLON.Vector3(7500,-14.5,7500);
 
-	      var groundMEGAR = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "DATASECRYGH11/images/game/MAPVALEY4.jpg", 15000, 15000, 100, 0, 450.5, scene, false);
+	      var groundMEGAR = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "img_game/MAPVALEY4.jpg", 15000, 15000, 100, 0, 450.5, scene, false);
             groundMEGAR.position = new BABYLON.Vector3(7500,-14.5,-7500);
 			groundMEGAR.material = groundMaterialROCK;
 			
-	       var groundMEGA = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "DATASECRYGH11/images/game/MAPVALEY1.jpg", 30000, 30000, 100, 0, 
+	       var groundMEGA = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "img_game/MAPVALEY1.jpg", 30000, 30000, 100, 0, 
 		   21, scene, false);//51
 			groundMEGA.position = new BABYLON.Vector3(0,-2,0);//0,-1.5,0);
 			groundMEGA.visibility=1;
@@ -754,7 +754,7 @@ function runDemo(canvasId) {
 			  groundMEGAWATER.material = groundMaterialWATER;
 			  groundMEGAWATER.visibility=1;	
 
-/*	var groundRIVER = BABYLON.Mesh.CreateGroundFromHeightMap("gr", "DATASECRYGH11/images/game/MAPVALEY5.jpg", 30000, 30000, 100, 0, 2.5, scene, false);
+/*	var groundRIVER = BABYLON.Mesh.CreateGroundFromHeightMap("gr", "img_game/MAPVALEY5.jpg", 30000, 30000, 100, 0, 2.5, scene, false);
             groundRIVER.position = new BABYLON.Vector3(0,-10.1,0);
             groundRIVER.material = groundMaterialWATER; */  			  
 			
@@ -767,7 +767,7 @@ function runDemo(canvasId) {
          //var water = BABYLON.Mesh.CreateGround("water", 30000, 30000, 1, scene, false);
 		 var water = BABYLON.Mesh.CreatePlane("water", 30000, scene, false);
 		 water.rotation.x = Math.PI / 2;
-		 //var water = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "DATASECRYGH11/images/game/MAPRIVER2.jpg", 30000, 30000, 300, 2, 4.5, scene, false);
+		 //var water = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "img_game/MAPRIVER2.jpg", 30000, 30000, 300, 2, 4.5, scene, false);
 		 water.position = new BABYLON.Vector3(0,-1,0);
          var waterMaterial = new WaterMaterial("water", scene, sun);
          waterMaterial.refractionTexture.renderList.push(groundMEGAWATER);
@@ -784,17 +784,17 @@ function runDemo(canvasId) {
 	
 	
 			var groundMaterialROCKAVE = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialROCKAVE.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/BA.jpg", scene);//BA A00 rockF2 
+            groundMaterialROCKAVE.diffuseTexture = new BABYLON.Texture("img_game/BA.jpg", scene);//BA A00 rockF2 
 			groundMaterialROCKAVE.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialROCKAVE.diffuseTexture.uScale = 6;//36   146
             groundMaterialROCKAVE.diffuseTexture.vScale = 226;//20   150
 		    /*var groundMaterialROCKAVE2 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialROCKAVE2.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/rockF2.jpg", scene);
+            groundMaterialROCKAVE2.diffuseTexture = new BABYLON.Texture("img_game/rockF2.jpg", scene);
 			groundMaterialROCKAVE2.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialROCKAVE2.diffuseTexture.uScale = 6;//36   146
             groundMaterialROCKAVE2.diffuseTexture.vScale = 226;//226   150
 		    var groundMaterialROCKAVE3 = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialROCKAVE3.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/A00.jpg", scene);
+            groundMaterialROCKAVE3.diffuseTexture = new BABYLON.Texture("img_game/A00.jpg", scene);
 			groundMaterialROCKAVE3.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
             groundMaterialROCKAVE3.diffuseTexture.uScale = 6;//36   146
             groundMaterialROCKAVE3.diffuseTexture.vScale = 226;//20   150*/
@@ -861,8 +861,8 @@ function runDemo(canvasId) {
 			
 
   	var materialRAWW1 = new BABYLON.StandardMaterial("ARROW", scene);
-    materialRAWW1.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/ROU1.jpg", scene);//F2
-	materialRAWW1.bumpTexture = new BABYLON.Texture("DATASECRYGH11/images/game/NORM1.jpg", scene);
+    materialRAWW1.diffuseTexture = new BABYLON.Texture("img_game/ROU1.jpg", scene);//F2
+	materialRAWW1.bumpTexture = new BABYLON.Texture("img_game/NORM1.jpg", scene);
    // materialRAWW1.diffuseTexture.hasAlpha = true;
     // materialRAWW1.emissiveColor = new BABYLON.Color3(0, 1, 1);
    // materialRAWW1.backFaceCulling = false; 	
@@ -886,7 +886,7 @@ function runDemo(canvasId) {
 
 		 
 	var materialRAW = new BABYLON.StandardMaterial("ARROW", scene);
-    materialRAW.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/RAW0.png", scene);//
+    materialRAW.diffuseTexture = new BABYLON.Texture("img_game/RAW0.png", scene);//
     materialRAW.diffuseTexture.hasAlpha = true;//materialRAW.emissiveColor = new BABYLON.Color3(0, 0, 0);
     materialRAW.backFaceCulling = false; 		 		  
 
@@ -916,22 +916,22 @@ function runDemo(canvasId) {
 	//####################  LIGHT CAR #####################################
 	//####################  LIGHT CAR #####################################
 	var dawmatYF = new BABYLON.StandardMaterial("texture1", scene);//YELLOW
-	dawmatYF.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/LIYF.jpg", scene);
+	dawmatYF.diffuseTexture = new BABYLON.Texture("img_game/LIYF.jpg", scene);
 	
 	var dawmat2N = new BABYLON.StandardMaterial("texture1", scene);//BLUE
-	dawmat2N.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/LIBF.jpg", scene);//LIBF  A17.png   LIBF.jpg
+	dawmat2N.diffuseTexture = new BABYLON.Texture("img_game/LIBF.jpg", scene);//LIBF  A17.png   LIBF.jpg
 	var dawmat2F = new BABYLON.StandardMaterial("texture1", scene);//BLUE
-	dawmat2F.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/LIBN.jpg", scene);//LIBN
+	dawmat2F.diffuseTexture = new BABYLON.Texture("img_game/LIBN.jpg", scene);//LIBN
 	
 	var materialDAW = new BABYLON.StandardMaterial("ARROW", scene);
-    materialDAW.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/F3.jpg", scene);//F2
+    materialDAW.diffuseTexture = new BABYLON.Texture("img_game/F3.jpg", scene);//F2
 	var materialDAW2 = new BABYLON.StandardMaterial("ARROW", scene);
-    materialDAW2.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/A17.png", scene);//F2
+    materialDAW2.diffuseTexture = new BABYLON.Texture("img_game/A17.png", scene);//F2
 	
 	
 			
 	var dawmatR = new BABYLON.StandardMaterial("texture1", scene);//RED
-	dawmatR.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/LIR.jpg", scene);
+	dawmatR.diffuseTexture = new BABYLON.Texture("img_game/LIR.jpg", scene);
 	
 
 
@@ -1040,13 +1040,13 @@ function runDemo(canvasId) {
 /* 
 		var BCB1 = new BABYLON.StandardMaterial("BAREl", scene);
 	   //BCB1.emissiveColor = new BABYLON.Color3(0.0, 0.0, 1.0);
-	    BCB1.diffuseTexture =  new BABYLON.Texture("DATASECRYGH11/images/game/A15.jpg", scene);
+	    BCB1.diffuseTexture =  new BABYLON.Texture("img_game/A15.jpg", scene);
 	    BCB1.diffuseTexture.uScale = 0.6;//36   146
         BCB1.diffuseTexture.vScale = 0.6;
 	
 	var BCB11 = new BABYLON.StandardMaterial("BAREl", scene);
 	//BCB1.emissiveColor = new BABYLON.Color3(0.0, 0.0, 1.0);
-	BCB11.diffuseTexture =  new BABYLON.Texture("DATASECRYGH11/images/game/F3.jpg", scene);
+	BCB11.diffuseTexture =  new BABYLON.Texture("img_game/F3.jpg", scene);
 	
 		var PROJECT1C = BABYLON.Mesh.CreateSphere("BAREL", 10, 1, scene);// PROJECT1 blachk COVER
          PROJECT1C.scaling = new BABYLON.Vector3(0.6, 0.9, 0.9);
@@ -1091,7 +1091,7 @@ function runDemo(canvasId) {
 	
  
 /*	for (var i = 0; i < 100; i++) {		
-		var BOXexplose11 = new BABYLON.SpriteManager("fireanim2", "DATASECRYGH11/images/game/EXPLOSION.gif", 100, 100, scene);
+		var BOXexplose11 = new BABYLON.SpriteManager("fireanim2", "img_game/EXPLOSION.gif", 100, 100, scene);
 		//var PORTtrees = PORTtreesORG.clone(PORTtreesORG);
 		xxx1 = random(-12900, 12900);zzz1 = random(-12900, 12900);	
     var FIRED = new BABYLON.Sprite("fireee2", BOXexplose11);
@@ -1106,9 +1106,9 @@ function runDemo(canvasId) {
 	
 
 		 var PORTtreesORG = BABYLON.Mesh.CreateCylinder("BAREL", 50, 35, 33, 4, scene);PORTtreesORG.visibility=0;
-		 var spriteManagerTreess = new BABYLON.SpriteManager("treesManager", "DATASECRYGH11/images/game/AR3.png", 300, 359, scene);//PALM
-		 var spriteManagerTreess2 = new BABYLON.SpriteManager("treesManager", "DATASECRYGH11/images/game/AR1.png", 300, 360, scene);//ORNG
-		 var spriteManagerTreess3 = new BABYLON.SpriteManager("treesManager", "DATASECRYGH11/images/game/AR4.png", 300, 195, scene);//GREEN
+		 var spriteManagerTreess = new BABYLON.SpriteManager("treesManager", "img_game/AR3.png", 300, 359, scene);//PALM
+		 var spriteManagerTreess2 = new BABYLON.SpriteManager("treesManager", "img_game/AR1.png", 300, 360, scene);//ORNG
+		 var spriteManagerTreess3 = new BABYLON.SpriteManager("treesManager", "img_game/AR4.png", 300, 195, scene);//GREEN
 		  var xxx1 =0;var zzz1=0; 
 	for (var i = 0; i < 300; i++) {		
 		var trees = new BABYLON.Sprite("trees", spriteManagerTreess2);trees.size = 60;
@@ -1144,7 +1144,7 @@ function runDemo(canvasId) {
 			
 		
 	/*
-    var spriteManagerKeys = new BABYLON.SpriteManager("treesManager", "DATASECRYGH11/images/game/KEY.png", 1, 60, scene);
+    var spriteManagerKeys = new BABYLON.SpriteManager("treesManager", "img_game/KEY.png", 1, 60, scene);
 	var KEY1 = new BABYLON.Sprite("trees", spriteManagerKeys);KEY1.size = 60;
 
 
@@ -1200,7 +1200,7 @@ var height = positions_array[pos_in_array*3 + 1];
 		
 		
 	var materiaSTART1 = new BABYLON.StandardMaterial("ARROW", scene);
-    materiaSTART1.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/STARTT.jpg", scene);//START3
+    materiaSTART1.diffuseTexture = new BABYLON.Texture("img_game/STARTT.jpg", scene);//START3
     materiaSTART1.diffuseTexture.hasAlpha = true;//materiaSTART.emissiveColor = new BABYLON.Color3(0, 0, 0);
     materiaSTART1.backFaceCulling = false; 	
 			
@@ -1219,7 +1219,7 @@ var height = positions_array[pos_in_array*3 + 1];
 //######################################### START ENTRANCE #########################################	
 	
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	var spriteManagerBOMB = new BABYLON.SpriteManager("BOMBS", "DATASECRYGH11/images/game/EXPLOSION.gif", 1, 100, scene);
+	var spriteManagerBOMB = new BABYLON.SpriteManager("BOMBS", "img_game/EXPLOSION.gif", 1, 100, scene);
 	var BOMB = new BABYLON.Sprite("fireee2", spriteManagerBOMB);BOMB.size=0;
 	
 	
@@ -1242,10 +1242,10 @@ var height = positions_array[pos_in_array*3 + 1];
 	var RAWSWKAVE = RAWSG.clone(RAWSG);RAWSWKAVE.checkCollisions = true;RAWSWKAVE.position = new BABYLON.Vector3(-195, 12, 70);
 	var RAWSW = RAWSG.clone(RAWSG);RAWSW.checkCollisions = true;RAWSW.position = new BABYLON.Vector3(-195, 12, 165);
 	
-	var spriteManagerKEY1 = new BABYLON.SpriteManager("spriteManagerKEY", "DATASECRYGH11/images/game/DIAMOND1.png", 2, 200, scene);
-	var spriteManagerKEY2 = new BABYLON.SpriteManager("spriteManagerKEY", "DATASECRYGH11/images/game/DIAMOND2.png", 2, 200, scene);
-	var spriteManagerKEY3 = new BABYLON.SpriteManager("spriteManagerKEY", "DATASECRYGH11/images/game/DIAMOND3.png", 2, 200, scene);
-	var spriteManagerKEY4 = new BABYLON.SpriteManager("spriteManagerKEY", "DATASECRYGH11/images/game/DIAMOND4.png", 2, 200, scene);
+	var spriteManagerKEY1 = new BABYLON.SpriteManager("spriteManagerKEY", "img_game/DIAMOND1.png", 2, 200, scene);
+	var spriteManagerKEY2 = new BABYLON.SpriteManager("spriteManagerKEY", "img_game/DIAMOND2.png", 2, 200, scene);
+	var spriteManagerKEY3 = new BABYLON.SpriteManager("spriteManagerKEY", "img_game/DIAMOND3.png", 2, 200, scene);
+	var spriteManagerKEY4 = new BABYLON.SpriteManager("spriteManagerKEY", "img_game/DIAMOND4.png", 2, 200, scene);
 
 	var KEY1 = new BABYLON.Sprite("BOMB", spriteManagerKEY1);KEY1.size = 0; 
 	var KEY2 = new BABYLON.Sprite("BOMB", spriteManagerKEY2);KEY2.size = 0; 
@@ -1273,7 +1273,7 @@ var height = positions_array[pos_in_array*3 + 1];
 	    BIGKEY.position = new BABYLON.Vector3(14000, 7, 14000);
 
 		/*
-			var spriteManagerENERG = new BABYLON.SpriteManager("spriteManagerKEY", "DATASECRYGH11/images/game/ENERG.png", 4, 60, scene);
+			var spriteManagerENERG = new BABYLON.SpriteManager("spriteManagerKEY", "img_game/ENERG.png", 4, 60, scene);
 		 
 	var LOADENERG  = new BABYLON.Sprite("BOMB", spriteManagerENERG);LOADENERG.size = 30; 
 	LOADENERG.position = new BABYLON.Vector3(-195, 12, -25);
@@ -1400,10 +1400,10 @@ MONST.position = new BABYLON.Vector3(83, 0.5, 535);MONST.rotation.y=1.14159;	//C
 	   
 
 	var materialBUILDD1 = new BABYLON.StandardMaterial("ARROW", scene); // white house
-    materialBUILDD1.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/buildingM1.jpg", scene);//AAA1   building2	
+    materialBUILDD1.diffuseTexture = new BABYLON.Texture("img_game/buildingM1.jpg", scene);//AAA1   building2	
 
 	var materialBUILDD2 = new BABYLON.StandardMaterial("ARROW", scene); //brown house
-    materialBUILDD2.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/building04.jpg", scene);//AAA2   building4	
+    materialBUILDD2.diffuseTexture = new BABYLON.Texture("img_game/building04.jpg", scene);//AAA2   building4	
 	
 	
 	var BUILDD1 = BABYLON.Mesh.CreateBox("ARROW.UP", 200, scene);
@@ -1477,7 +1477,7 @@ MONST.position = new BABYLON.Vector3(83, 0.5, 535);MONST.rotation.y=1.14159;	//C
 		BUILDD002.BUILDINGTOUCH = "BUILDINGTOUCH";}		 
 
 /*var materialBUILDD1 = new BABYLON.StandardMaterial("ARROW", scene);
-    materialBUILDD1.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/buildingM1.jpg", scene);//buildingM1:04 AAA1   building2	
+    materialBUILDD1.diffuseTexture = new BABYLON.Texture("img_game/buildingM1.jpg", scene);//buildingM1:04 AAA1   building2	
 
 	var BUILDD = BABYLON.Mesh.CreateBox("ARROW.UP", 200, scene);
 	BUILDD.scaling = new BABYLON.Vector3(1.0, 1.0, 1.0);
@@ -1772,19 +1772,19 @@ groundMEGAWATER.material = groundMaterialWATER2;*/
                          MOONicon.style.width = MOONicon.style.height = 0 + 'px';}  }
  
   if(MOTTO==1){
-    materialRAW.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/RAW1.png", scene);//RAW
+    materialRAW.diffuseTexture = new BABYLON.Texture("img_game/RAW1.png", scene);//RAW
     materialRAW.diffuseTexture.hasAlpha = true;
     materialRAW.backFaceCulling = false; 		 		  
 	RAWD1.material = materialRAW;MOTTO=0;}	
 	
   if(MOTTO==2){
-    materialRAW.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/RAW01.png", scene);//RAW0
+    materialRAW.diffuseTexture = new BABYLON.Texture("img_game/RAW01.png", scene);//RAW0
     materialRAW.diffuseTexture.hasAlpha = true;
     materialRAW.backFaceCulling = false; 		 		  
 	RAWD1.material = materialRAW;MOTTO=0;}
 	
  if(MOTTO==3){
-    materialRAW.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/RAW0.png", scene);//RAW0
+    materialRAW.diffuseTexture = new BABYLON.Texture("img_game/RAW0.png", scene);//RAW0
     materialRAW.diffuseTexture.hasAlpha = true;
     materialRAW.backFaceCulling = false; 		 		  
 	RAWD1.material = materialRAW;MOTTO=0;}
@@ -1792,7 +1792,7 @@ groundMEGAWATER.material = groundMaterialWATER2;*/
 
  	/* if((CARRR==1)&&(chang==1)){MONSTER000.visibility = 0;MONSTER00.visibility = 1;//BACHI 2 YLW
 	                           MONSTER00.parent=PLANE;MONSTER000.parent=RAWSS1;
-                    materialRAW.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/RAW0.png", scene);//RAW
+                    materialRAW.diffuseTexture = new BABYLON.Texture("img_game/RAW0.png", scene);//RAW
                     materialRAW.diffuseTexture.hasAlpha = true;
                     materialRAW.backFaceCulling = false; 	 		  
 	                RAWD1.material = materialRAW;
@@ -1800,7 +1800,7 @@ groundMEGAWATER.material = groundMaterialWATER2;*/
 	
 	 if((CARRR==2)&&(chang==1)){MONSTER000.visibility = 1;MONSTER00.visibility = 0;  // BACHI 1 WHT
 	                           MONSTER000.parent=PLANE;MONSTER00.parent=RAWSS1;
-                   materialRAW.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/RAW3.png", scene);//
+                   materialRAW.diffuseTexture = new BABYLON.Texture("img_game/RAW3.png", scene);//
                    materialRAW.diffuseTexture.hasAlpha = true;
                    materialRAW.backFaceCulling = false;
                     //MONSTER000.position.y=10;				   
@@ -2427,7 +2427,7 @@ function getForwardVector(rotation) {
 function createSkybox(scene) {
      var sMaterial = new BABYLON.StandardMaterial("skyboxMaterial", scene);
      sMaterial.backFaceCulling = false;
-	 sMaterial.reflectionTexture = new BABYLON.CubeTexture("DATASECRYGH11/images/game/skybox/1/skybox", scene);
+	 sMaterial.reflectionTexture = new BABYLON.CubeTexture("img_game/skybox/1/skybox", scene);
      sMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
      sMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
      sMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
@@ -2448,14 +2448,14 @@ function createDemoScene(scene) {
 	SK1.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK1.rotation.y = Math.PI / 2;
 	SK1.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK1.material.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/skybox/2/skybox_nx.jpg", scene);
+	SK1.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_nx.jpg", scene);
 	SK1.position = new BABYLON.Vector3(2000,1000,0);
 	SK1.checkCollisions = true;
 	
 	var SK2 = BABYLON.Mesh.CreatePlane("3groundGRoutBOG", 4005, scene);
 	SK2.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK2.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK2.material.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/skybox/2/skybox_nz.jpg", scene);
+	SK2.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_nz.jpg", scene);
 	SK2.position = new BABYLON.Vector3(0,1000,2000);
 	SK2.checkCollisions = true;
 	
@@ -2463,7 +2463,7 @@ function createDemoScene(scene) {
 	SK3.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK3.rotation.y = Math.PI;
 	SK3.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK3.material.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/skybox/2/skybox_pz.jpg", scene);
+	SK3.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_pz.jpg", scene);
 	SK3.position = new BABYLON.Vector3(0,1000,-2000);
 	SK3.checkCollisions = true;
 	
@@ -2471,7 +2471,7 @@ function createDemoScene(scene) {
 	SK4.scaling = new BABYLON.Vector3(1,0.5,0.001);
 	SK4.rotation.y = -Math.PI/2 ;SK4.rotation.z = -2*Math.PI ;
 	SK4.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK4.material.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/skybox/2/skybox_px.jpg", scene);
+	SK4.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_px.jpg", scene);
 	SK4.position = new BABYLON.Vector3(-2000,1000,0);
 	SK4.checkCollisions = true;
 	
@@ -2479,7 +2479,7 @@ function createDemoScene(scene) {
 	SK5.scaling = new BABYLON.Vector3(1,1,0.0001);
 	SK5.rotation.x = -Math.PI/2 ;SK5.rotation.z = -Math.PI/2 ;
 	SK5.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK5.material.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/skybox/2/skybox_ny.jpg", scene);
+	SK5.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_ny.jpg", scene);
 	SK5.position = new BABYLON.Vector3(0,1990,0);//(0,1990,0);
 	SK5.checkCollisions = true;
 	
@@ -2488,7 +2488,7 @@ function createDemoScene(scene) {
 	//SK6.rotation.x = Math.PI/2 ;
 	SK6.position = new BABYLON.Vector3(0,-100,0);
 	SK6.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK6.material.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/skybox/2/5.jpg", scene);
+	SK6.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/5.jpg", scene);
 	SK6.material.emissiveColor =  new BABYLON.Color3(1.0, 1.0, 1.0);*/
 	SK1.material.emissiveColor = SK2.material.emissiveColor = SK3.material.emissiveColor = SK4.material.emissiveColor =SK5.material.emissiveColor =  new BABYLON.Color3(1.0, 1.0, 1.0);
 
@@ -2502,7 +2502,7 @@ function createDemoScene(scene) {
 	/*	var groundGRBIG = BABYLON.Mesh.CreatePlane("groundGRoutBOG", 4010, scene);
 	groundGRBIG.rotation.x = Math.PI / 2;
 	groundGRBIG.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	groundGRBIG.material.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/snow.jpg", scene);//S1 W2  STREET  ground1,ground2;street2:W2;
+	groundGRBIG.material.diffuseTexture = new BABYLON.Texture("img_game/snow.jpg", scene);//S1 W2  STREET  ground1,ground2;street2:W2;
 	groundGRBIG.material.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 	groundGRBIG.material.diffuseTexture.uScale = 100;
 	groundGRBIG.material.diffuseTexture.vScale = 100;
@@ -2526,9 +2526,9 @@ function createDemoScene(scene) {
 
 /*
 		// Ground UP
-           var groundUP = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "DATASECRYGH11/images/game/MAPBIGG2.jpg", 4000, 4000, 400, 0, 0.5, scene, false);//1, 2.5
+           var groundUP = BABYLON.Mesh.CreateGroundFromHeightMap("groundGRASS", "img_game/MAPBIGG2.jpg", 4000, 4000, 400, 0, 0.5, scene, false);//1, 2.5
             var groundMaterialUP = new BABYLON.StandardMaterial("groundUP", scene);
-            groundMaterialUP.diffuseTexture = new BABYLON.Texture("DATASECRYGH11/images/game/snow.jpg", scene);//ground4,snow.
+            groundMaterialUP.diffuseTexture = new BABYLON.Texture("img_game/snow.jpg", scene);//ground4,snow.
             groundMaterialUP.diffuseTexture.uScale = 196;//36
             groundMaterialUP.diffuseTexture.vScale = 190;//20
             groundMaterialUP.specularColor = new BABYLON.Color3(0, 0, 0);

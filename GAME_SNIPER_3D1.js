@@ -11,7 +11,7 @@ STARTicon= document.getElementById('STARTicon');
 
 START = document.getElementById('START');
 
-var LEFT = 0;var RIGHT = 0;var UP = 0;var DOWN = 0;
+//var LEFT = 0;var RIGHT = 0;var UP = 0;var DOWN = 0;
 var LEFTicon,RIGHTicon,UPicon,DOWNicon;
 LEFTicon  = document.getElementById('LEFTicon');
 RIGHTicon = document.getElementById('RIGHTicon');
@@ -183,7 +183,7 @@ var MATAHA=0;
 //################################# KEY BOARD CONTROL ############################
 //################################# KEY BOARD CONTROL ############################
 //################################# KEY BOARD CONTROL ############################
-var keys={letft:0,right:0,forward:0,back:0};
+/*var keys={letft:0,right:0,forward:0,back:0};
 window.addEventListener("keydown", handleKeyDown, false);
 window.addEventListener("keyup", handleKeyUp, false);
 
@@ -197,7 +197,7 @@ function handleKeyUp(evt){
     if (evt.keyCode==37){keys.left=0;}
     if (evt.keyCode==39){keys.right=0;}
     if (evt.keyCode==38){keys.forward=0;}
-    if (evt.keyCode==40){keys.back=0;}   }
+    if (evt.keyCode==40){keys.back=0;}   }*/
 
 
 	/*var keys={letft:0,right:0,forward:0,back:0};
@@ -207,25 +207,11 @@ function handleKeyUp(evt){
 	function RIGHT(){keys.right=1;}*/
 	
 	
-/*
-var TIMS=300;
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-	display.textContent = "05 : 00";
-    setInterval(function () {
-	  if(START==1){
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10);
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {timer = duration;}
-		}
-
-    }, 1000);
-}
-startTimer(TIMS, document.querySelector('#time')); */
+var keys={letft:0,right:0,forward:0,back:0};
+	function UP(){keys.forward=1;}
+	function DOWN(){keys.back=1;}
+	function LEFT(){keys.left=1;}
+	function RIGHT(){keys.right=1;}
 
 
 

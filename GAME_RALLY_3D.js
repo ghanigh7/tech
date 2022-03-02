@@ -2747,7 +2747,7 @@ function getForwardVector(rotation) {
 function createSkybox(scene) {
      var sMaterial = new BABYLON.StandardMaterial("skyboxMaterial", scene);
      sMaterial.backFaceCulling = false;
-	 sMaterial.reflectionTexture = new BABYLON.CubeTexture("img_game_skybox", scene);
+	 sMaterial.reflectionTexture = new BABYLON.CubeTexture("img_game/img_game_skybox", scene);
      sMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
      sMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
      sMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
@@ -2768,14 +2768,14 @@ function createDemoScene(scene) {
 	SK1.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK1.rotation.y = Math.PI / 2;
 	SK1.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK1.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_nx.jpg", scene);
+	SK1.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_nx.jpg", scene);
 	SK1.position = new BABYLON.Vector3(2000,1000,0);
 	SK1.checkCollisions = true;
 	
 	var SK2 = BABYLON.Mesh.CreateBox("3groundGRoutBOG", 4000, scene);
 	SK2.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK2.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK2.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_nz.jpg", scene);
+	SK2.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_nz.jpg", scene);
 	SK2.position = new BABYLON.Vector3(0,1000,2000);
 	SK2.checkCollisions = true;
 	
@@ -2783,7 +2783,7 @@ function createDemoScene(scene) {
 	SK3.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK3.rotation.y = Math.PI;
 	SK3.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK3.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_pz.jpg", scene);
+	SK3.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_pz.jpg", scene);
 	SK3.position = new BABYLON.Vector3(0,1000,-2000);
 	SK3.checkCollisions = true;
 	
@@ -2792,7 +2792,7 @@ function createDemoScene(scene) {
 	SK4.rotation.y = Math.PI/2 ;
 	SK4.rotation.z = Math.PI ;
 	SK4.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK4.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_px.jpg", scene);
+	SK4.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_px.jpg", scene);
 	SK4.position = new BABYLON.Vector3(-2000,1000,0);
 	SK4.checkCollisions = true;
 	
@@ -2801,7 +2801,7 @@ function createDemoScene(scene) {
 	SK5.rotation.x = Math.PI/2 ;
 	SK5.rotation.z = Math.PI/2 ;
 	SK5.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK5.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_ny.jpg", scene);
+	SK5.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_ny.jpg", scene);
 	SK5.position = new BABYLON.Vector3(0,1990,0);
 	SK5.checkCollisions = true;*/	
 	
@@ -2811,14 +2811,14 @@ function createDemoScene(scene) {
 	SK1.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK1.rotation.y = Math.PI / 2;
 	SK1.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK1.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_nx.jpg", scene);
+	SK1.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_nx.jpg", scene);
 	SK1.position = new BABYLON.Vector3(2000,1000,0);
 	SK1.checkCollisions = true;
 	
 	var SK2 = BABYLON.Mesh.CreatePlane("3groundGRoutBOG", 4005, scene);
 	SK2.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK2.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK2.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_nz.jpg", scene);
+	SK2.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_nz.jpg", scene);
 	SK2.position = new BABYLON.Vector3(0,1000,2000);
 	SK2.checkCollisions = true;
 	
@@ -2826,7 +2826,7 @@ function createDemoScene(scene) {
 	SK3.scaling = new BABYLON.Vector3(1,0.5,0.004);
 	SK3.rotation.y = Math.PI;
 	SK3.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK3.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_pz.jpg", scene);
+	SK3.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_pz.jpg", scene);
 	SK3.position = new BABYLON.Vector3(0,1000,-2000);
 	SK3.checkCollisions = true;
 	
@@ -2834,7 +2834,7 @@ function createDemoScene(scene) {
 	SK4.scaling = new BABYLON.Vector3(1,0.5,0.001);
 	SK4.rotation.y = -Math.PI/2 ;SK4.rotation.z = -2*Math.PI ;
 	SK4.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK4.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_px.jpg", scene);
+	SK4.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_px.jpg", scene);
 	SK4.position = new BABYLON.Vector3(-2000,1000,0);
 	SK4.checkCollisions = true;
 	
@@ -2842,7 +2842,7 @@ function createDemoScene(scene) {
 	SK5.scaling = new BABYLON.Vector3(1,1,0.0001);
 	SK5.rotation.x = -Math.PI/2 ;SK5.rotation.z = -Math.PI/2 ;
 	SK5.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK5.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/skybox_ny.jpg", scene);
+	SK5.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/skybox_ny.jpg", scene);
 	SK5.position = new BABYLON.Vector3(0,1990,0);//(0,1990,0);
 	SK5.checkCollisions = true;
 	
@@ -2851,7 +2851,7 @@ function createDemoScene(scene) {
 	//SK6.rotation.x = Math.PI/2 ;
 	SK6.position = new BABYLON.Vector3(0,-100,0);
 	SK6.material = new BABYLON.StandardMaterial("gMaterial", scene);
-	SK6.material.diffuseTexture = new BABYLON.Texture("img_game_skybox/5.jpg", scene);
+	SK6.material.diffuseTexture = new BABYLON.Texture("img_game/img_game_skybox/5.jpg", scene);
 	SK6.material.emissiveColor =  new BABYLON.Color3(1.0, 1.0, 1.0);*/
 	SK1.material.emissiveColor = SK2.material.emissiveColor = SK3.material.emissiveColor = SK4.material.emissiveColor =SK5.material.emissiveColor =  new BABYLON.Color3(1.0, 1.0, 1.0);
 

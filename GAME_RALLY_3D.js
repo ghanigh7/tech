@@ -263,11 +263,15 @@ function handleKeyUp(evt){
 
 
 	var keys={letft:0,right:0,forward:0,back:0};
-	function UP(){keys.forward=1;keys.back=0;keys.left=0;keys.right=0;}
-	function DOWN(){keys.forward=0;keys.back=0;keys.left=0;keys.right=0;}
-	function LEFT(){keys.forward=0;keys.back=0;keys.left=1;keys.right=0;}
-	function RIGHT(){keys.forward=0;keys.back=0;keys.left=0;keys.right=1;}
-	function UNLOOK(){keys.forward=0;keys.back=0;keys.left=0;keys.right=0;}
+	function UPd(){keys.forward=1;}
+	function UPu(){keys.forward=0;}
+	function DOWNd(){keys.back=1;}
+	function DOWNu(){keys.back=0;}
+	function LEFTd(){keys.left=1;}
+	function LEFTu(){keys.left=0;}
+	function RIGHTd(){keys.right=1;}
+	function RIGHTu(){keys.right=0;}
+	/*function UNLOOK(){keys.forward=0;keys.back=0;keys.left=0;keys.right=0;}*/
 	
 var HANDCONTROL=0;	
 function HAND1(){  HANDCONTROL=1;BOUTTON1.play();}

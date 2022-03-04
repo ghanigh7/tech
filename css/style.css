@@ -2,9 +2,9 @@
 Tahoma, Geneva  color: #76777D 666565 ; **********/
 
 
-@font-face {font-family: 'TESLA';src: url('sephora.TTF') format('truetype');}
+@font-face {font-family: 'TESLA';src: url('sephora.ttf') format('truetype');}
 @font-face {font-family: 'ARABIC';src: url('arabic_font.TTF') format('truetype');}
-@font-face {font-family: 'DIGITAL';src: url('DIGITAL.TTF') format('truetype');}
+@font-face {font-family: 'DIGITAL';src: url('DIGITAL.ttf') format('truetype');}
 
 body {color: #76777D;font-family: Arial, Helvetica, sans-serif;font-size: 16px;font-style: normal;}
 

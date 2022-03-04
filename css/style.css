@@ -1,11 +1,14 @@
 /********** Template CSS --secondary: #FF6922;
 Tahoma, Geneva  color: #76777D 666565 ; **********/
 
+
+@font-face {font-family: 'TESLA';src: url('sephora.ttf') format('truetype');}
+@font-face {font-family: 'ARABIC';src: url('arabic_font.ttf') format('truetype');}
+@font-face {font-family: 'DIGITAL';src: url('DIGITAL.ttf') format('truetype');}
+
 body {color: #76777D;font-family: Arial, Helvetica, sans-serif;font-size: 16px;font-style: normal;}
 
-@font-face {font-family: 'TESLA';src: url('sephora.TTF') format('truetype');}
-@font-face {font-family: 'ARABIC';src: url('arabic_font.TTF') format('truetype');}
-@font-face {font-family: 'DIGITAL';src: url('DIGITAL.TTF') format('truetype');}
+
 :root {
     --primary: #13D4AD;/*#00B98E;#08EACB;00FDD5   #0EEBC2*/
 	--primary_dark:#00B98E;
@@ -648,20 +651,25 @@ img.opacityy3:hover{border-radius:5px;-moz-border-radius:5px;-webkit-border-radi
 -webkit-transform:rotate(-720deg) scale(1.5);-o-transform:rotate(-720deg) scale(1.5);
 -ms-transform:rotate(720deg) scale(1.5);transform:rotate(-720deg) scale(1.5);}*/
 
-img.opacityy4,img.opacityy4:hover{transition:all .7s ease;-moz-transition:all .7s ease;-webkit-transition:all .7s ease;-ms-transition:all .7s ease;-o-transition:all .7s ease;}
+img.opacityy4,img.opacityy4:hover,img.opacityy5,img.opacityy5:hover{transition:all .7s ease;-moz-transition:all .7s ease;-webkit-transition:all .7s ease;-ms-transition:all .7s ease;-o-transition:all .7s ease;}
 img.opacityy:hover {align:middle; box-shadow: 0px 0px 15px 15px #fff;-webkit-box-shadow: 0px 0px 15px 15px #fff;-moz-box-shadow: 0px 0px 15px 15px #fff;-o-box-shadow: 0px 0px 15px 15px #fff;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;-moz-transform:scale(1.3);-webkit-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}i
 img.opacityy,img.opacityy1,img.opacityy2,img.opacityy4,img.opacityy:hover,img.opacityy1:hover,
 img.opacityy2:hover,img.opacityy4:hover,img.opacityy3,img.opacityy3:hover
 {transition:all .7s ease;-moz-transition:all .7s ease;-webkit-transition:all .7s ease;-ms-transition:all .7s ease;-o-transition:all .7s ease;}
 
 
-@-webkit-keyframes OPACTIY {
-0%,100%{opacity:0.3;}50%{opacity:1;}} 
+@-webkit-keyframes OPACTIY {0%,100%{opacity:0.3;}50%{opacity:1;}} 
 @-moz-keyframes OPACTIY {0%,100%{opacity:0.3;}50%{opacity:1;}} 
 @-ms-keyframes OPACTIY {0%,100%{opacity:0;}50%{opacity:1;}} 
 @-o-keyframes OPACTIY {0%,100%{opacity:0;}50%{opacity:1;}} 
 @-webkit-keyframes OPACTIY {0%,100%{opacity:0.3;}50%{opacity:1;}}
 
+
+@-webkit-keyframes OPACTIY2 {0%,100%{opacity:0.2;}50%{opacity:0.5;}} 
+@-moz-keyframes OPACTIY2 {0%,100%{opacity:0.2;}50%{opacity:0.5;}} 
+@-ms-keyframes OPACTIY2 {0%,100%{opacity:0.2;}50%{opacity:0.5;}} 
+@-o-keyframes OPACTIY2 {0%,100%{opacity:0.2;}50%{opacity:0.5;}} 
+@-webkit-keyframes OPACTIY2 {0%,100%{opacity:0.2;}50%{opacity:0.5;}} 
 
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next,
@@ -670,6 +678,10 @@ img.opacityy2:hover,img.opacityy4:hover,img.opacityy3,img.opacityy3:hover
 .back-to-top,img.opacityy4{
 -webkit-animation: OPACTIY 2s infinite;-moz-animation: OPACTIY 2s infinite;
 -ms-animation: OPACTIY 2s infinite;-o-animation: OPACTIY 2s infinite;animation: OPACTIY 2s infinite;}
+
+img.opacityy5{
+-webkit-animation: OPACTIY2 2s infinite;-moz-animation: OPACTIY2 2s infinite;
+-ms-animation: OPACTIY2 2s infinite;-o-animation: OPACTIY2 2s infinite;animation: OPACTIY2 2s infinite;}
 
 
 
@@ -688,7 +700,8 @@ img.opacityy2:hover,img.opacityy4:hover,img.opacityy3,img.opacityy3:hover
 .header-carousel .owl-nav .owl-next:hover,
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover,
-.back-to-top:hover,img.opacityy4:hover {-webkit-box-shadow: 0px 0px 9px 9px var(--primary);
+.back-to-top:hover,img.opacityy4:hover,img.opacityy5:hover 
+{-webkit-box-shadow: 0px 0px 9px 9px var(--primary);
 -o-box-shadow: 0px 0px 9px 9px var(--primary);
 box-shadow: 0px 0px 9px 9px var(--primary);
 -moz-box-shadow: 0px 0px 9px 9px var(--primary);
